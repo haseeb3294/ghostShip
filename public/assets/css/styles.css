@@ -44,7 +44,7 @@
 {
     font-size: 14px;
     opacity: 0.9;
-    color: #0F2038;
+    color: var(--vz-font-color-theme);
 }
 #scrollbar
 {
@@ -67,4 +67,65 @@
     width: 10px;
     background-color: #2B5BFC;
     border-radius: 50%;
+}
+.text-light-pink {
+    background-color: #F1B1D5;
+    color: white;
+    height: 30px;
+    width: 59px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.text-light-green
+{
+    background-color: #BDE1CD;
+    color: white;
+    height: 30px;
+    width: 59px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bg-gray-light
+{
+    background-color:#f8f8f9;
+}
+.border-left-blue-3
+{
+    border-left: 3px solid #2B5BFC;
+}
+.w-10
+{
+    width: 10%;
+}
+.h-100-vh
+{
+    height: 100vh;
+}
+.btn-secondary-theme
+{
+    background-color: #2B5BFC;
+    border-radius: 15px;
+    color: white;
+}
+.btn-secondary-theme:hover
+{
+    background-color: #1b50ff;
+    color: white;
+}
+.waitList h3
+{
+    font-size: 30px;
+    font-weight: 700;
+    color: var(--vz-font-color-theme);
+}
+.waitList p
+{
+    color: var(--vz-font-color-theme);
+    font-size: 18px;
+    font-weight: 500;
+    opacity: 0.7;
+    margin: 20px 0;
+    line-height: 2;
 }

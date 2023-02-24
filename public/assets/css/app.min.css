@@ -563,7 +563,7 @@
 
 @media (min-width: 768px) {
     [data-layout=vertical][data-sidebar-size=sm-hover] #page-topbar, [data-layout=vertical][data-sidebar-size=sm] #page-topbar {
-        left: 70px
+        left: 0;
     }
 }
 
@@ -1172,7 +1172,7 @@
     }
 
     [data-layout=vertical][data-sidebar-size=sm] .main-content {
-        margin-left: 70px
+        margin-left: 0;
     }
 }
 
@@ -1199,8 +1199,9 @@
 
 [data-layout=vertical][data-sidebar-size=sm] .navbar-menu {
     position: absolute;
-    width: 70px !important;
-    padding-top: 70px
+    width: 0px !important;
+    padding-top: 70px;
+    overflow: hidden;
 }
 
 [data-layout=vertical][data-sidebar-size=sm] .navbar-menu .simplebar-content-wrapper, [data-layout=vertical][data-sidebar-size=sm] .navbar-menu .simplebar-mask {
@@ -4933,7 +4934,7 @@ html {
 
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
     color: var(--vz-heading-color);
-    font-family: Poppins, sans-serif
+    font-family: 'Plus Jakarta Sans', sans-serif;
 }
 
 a {

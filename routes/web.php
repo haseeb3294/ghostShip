@@ -20,3 +20,7 @@ Route::get('/', function () {
 Route::get('/waitList', function () {
  return view('pages.waitlist');
 })->name('waitList');
+
+Route::get('/signup', function () {
+ return view('pages.signup');
+})->name('signup');

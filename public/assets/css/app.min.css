@@ -110,6 +110,7 @@
     --vz-pagination-hover-bg: #eff2f7;
     --vz-input-bg: #fff;
     --vz-font-color-theme:#0F2038;
+    --vz-font-color-blue:#2B5BFC;
     --vz-input-border: #ced4da;
     --vz-input-focus-border: #a0a8c4;
     --vz-input-disabled-bg: #eff2f7;
@@ -7279,11 +7280,15 @@ a, button {
 
 .progress-nav .progress {
     position: absolute;
-    left: 0;
     top: 50%;
     -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
-    width: 100%
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
 }
 
 .progress-nav .nav {
@@ -7295,17 +7300,21 @@ a, button {
 }
 
 .progress-nav .nav .nav-link {
-    width: 2rem;
-    height: 2rem;
-    background-color: var(--vz-light);
+    width: 51px;
+    height: 51px;
+    background-color: var(--vz-body-bg);
     padding: 0;
+    border: 1px solid #ABB2BA4D;
+    font-weight: 600;
+    font-size: 25px;
     color: var(--vz-dark);
-    font-weight: 500
 }
 
 .progress-nav .nav .nav-link.active, .progress-nav .nav .nav-link.done {
-    background-color: #405189;
-    color: #fff
+    background-color: #0f2038;
+    color: #fff;
+    font-size: 25px;
+    font-weight: 600;
 }
 
 .step-arrow-nav .nav {

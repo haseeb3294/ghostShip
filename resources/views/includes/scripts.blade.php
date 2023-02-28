@@ -20,3 +20,6 @@
 
 <!-- App js -->
 <script src="{{asset('assets/js/app.js')}}"></script>
+
+<!-- form wizard init -->
+<script src="{{asset('assets/js/pages/form-wizard.init.js')}}"></script>

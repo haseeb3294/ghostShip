@@ -72,7 +72,6 @@
             </div>
         </div>
     </header>
-
 @endsection
 @section('content')
     <div class="main-content">
@@ -309,17 +308,81 @@
 
                                         <div class="tab-pane fade" id="pills-success" role="tabpanel"
                                              aria-labelledby="pills-success-tab">
-                                            <div>
-                                                <div class="text-center">
-
-                                                    <div class="mb-4">
-                                                        <lord-icon src="https://cdn.lordicon.com/lupuorrc.json"
-                                                                   trigger="loop"
-                                                                   colors="primary:#0ab39c,secondary:#405189"
-                                                                   style="width:120px;height:120px"></lord-icon>
+                                            <div class="mt-5 pt-4">
+                                                <div class="mb-2">
+                                                    <div>
+                                                        <p class="fs-12 fw-600 font-theme opacity-75">Payment Information</p>
                                                     </div>
-                                                    <h5>Well Done !</h5>
-                                                    <p class="text-muted">You have Successfully Signed Up</p>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-12">
+                                                        <div class="theme-card mb-5">
+                                                            <div class="card-content">
+                                                                <div class="alert alert-theme-blue d-flex align-items-center gap-2">
+                                                                    <div class="icon-group">
+                                                                        <img src="{{ asset('assets/images/figma/info-icon.png') }}" alt="icon">
+                                                                    </div>
+                                                                    <p class="mb-0 fs-15">Verify the information before proceeding</p>
+                                                                </div>
+                                                                <div class="d-flex align-items-center justify-content-between mb-3">
+                                                                    <p class="mb-0">Basic Subscription</p>
+                                                                    <p class="mb-0 text-theme-blue">$20.00</p>
+                                                                </div>
+                                                                <div class="d-flex align-items-center justify-content-between">
+                                                                    <p class="mb-0">Tax</p>
+                                                                    <p class="mb-0 text-theme-blue">$5.00</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="card-footer">
+                                                                <div class="d-flex align-items-center justify-content-between">
+                                                                    <p class="mb-0 fs-15 fw-bold">Subtotal</p>
+                                                                    <p class="mb-0 fs-15 fw-bold text-theme-blue">$25.00</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="payment-information">
+                                                    <form>
+                                                        <div class="row">
+                                                            <div class="col-lg-6 col-md-6 col-12">
+                                                                <div class="mb-4">
+                                                                    <div class="did-floating-label-content">
+                                                                        <input class="did-floating-input" type="text" placeholder="Enter card number" value="1235 1598 1563">
+                                                                        <label class="did-floating-label">Card Number</label>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-6 col-md-6 col-12">
+                                                                <div class="mb-4">
+                                                                    <div class="did-floating-label-content">
+                                                                        <input class="did-floating-input" type="text" placeholder="Enter name on card" value="Visa Card">
+                                                                        <label class="did-floating-label">Name on card</label>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-6 col-md-6 col-12">
+                                                                <div>
+                                                                    <div class="did-floating-label-content">
+                                                                        <input class="did-floating-input" type="text" placeholder="Card expiry date" value="22/08/2025">
+                                                                        <label class="did-floating-label">Expiry date</label>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-6 col-md-6 col-12">
+                                                                <div>
+                                                                    <div class="did-floating-label-content">
+                                                                        <input class="did-floating-input" type="text" placeholder="Security code" value="3258">
+                                                                        <label class="did-floating-label">Security code</label>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-12 mt-3 text-end">
+                                                                <button type="button" class="ms-auto btn btn-secondary-theme fw-600 fs-18 px-5">Save
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                    </form>
                                                 </div>
                                             </div>
                                         </div>

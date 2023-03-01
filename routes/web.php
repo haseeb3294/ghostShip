@@ -21,6 +21,6 @@ Route::get('/waitList', function () {
  return view('pages.waitlist');
 })->name('waitList');
 
-Route::get('/signup', function () {
+Route::get('/account-creation', function () {
  return view('pages.signup');
 })->name('signup');

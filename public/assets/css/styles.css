@@ -315,3 +315,30 @@ select.did-floating-select::-ms-expand {
 {
     line-height: 38px;
 }
+.theme-card{
+    border: 1px solid rgba(171, 178, 186, 0.3);
+    border-radius: 7px;
+    overflow: hidden;
+}
+.theme-card .card-content{
+    padding: 15px;
+    border-bottom: 1px solid rgba(171, 178, 186, 0.3);
+}
+.theme-card .card-footer{
+    padding: 15px;
+}
+.icon-group{
+    padding: 6px 7px;
+    background-color: #ffffff;
+    border-radius: 50%;
+}
+.icon-group img{
+    height: 20px;
+}
+.alert-theme-blue{
+    background-color: #E9EEFF;
+    color: #2B5BFC;
+}
+.text-theme-blue{
+    color: #2B5BFC;
+}

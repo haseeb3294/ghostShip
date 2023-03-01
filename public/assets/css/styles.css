@@ -342,3 +342,24 @@ select.did-floating-select::-ms-expand {
 .text-theme-blue{
     color: #2B5BFC;
 }
+.theme-card-2{
+    padding: 15px;
+    border: 1px solid rgba(171, 178, 186, 0.3);
+    border-radius: 7px;
+}
+.text-theme-light{
+    color: #0F2038;
+}
+.account-features{
+    padding-left: 0;
+    margin-bottom: 0;
+}
+.lh-24{
+    line-height: 24px;
+}
+.fw-600{
+    font-weight: 600;
+}
+.page-content{
+    padding:calc(50px + 1.5rem) calc(1.5rem / 2) 60px calc(1.5rem / 2);
+}

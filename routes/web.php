@@ -24,3 +24,11 @@ Route::get('/waitList', function () {
 Route::get('/account-creation', function () {
  return view('pages.signup');
 })->name('signup');
+
+Route::get('/account-level', function () {
+    return view('pages.account_level');
+})->name('account_level');
+
+Route::get('/settings', function () {
+    return view('pages.settings');
+})->name('settings');

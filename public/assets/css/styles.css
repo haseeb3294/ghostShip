@@ -413,3 +413,47 @@ select.did-floating-select::-ms-expand {
 .btn-custom{
     padding: 4px 25px;
 }
+
+/* for toggle switch */
+.form-switch .form-check-input{
+    width: 3em;
+}
+.form-check-input{
+    height: 1.5em;
+}
+
+.navigation-toggle-btn{
+    display: none;
+}
+.nav-toggle-close-box{
+    display: none;
+}
+
+@media only screen and (max-width:767px){
+    .settings-container{
+        position: relative;
+    }
+    .settings-container .setting-navigation{
+        width: 100%;
+        min-height: auto;
+        position: absolute;
+        background: #fff;
+        border-bottom: 1px solid #e6e7ea;
+        z-index: 99;
+        display: none;
+    }
+    .settings-container .setting-content{
+        width: 100%;
+    }
+    .settings-container .setting-content .setting-header{
+        display: flex;
+        align-items: center;
+        gap: 0.8rem;
+    }
+    .settings-container .setting-content .setting-header .navigation-toggle-btn{
+        display: block;
+    }
+    .nav-toggle-close-box{
+        display: block;
+    }
+}

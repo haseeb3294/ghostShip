@@ -82,7 +82,7 @@
                         <div class="card shadow-none">
                             <div class="card-body">
                                 <div class="row">
-                                    <div class="col-lg-6 col-12">
+                                    <div class="col-lg-6 col-12 mb-2">
                                         <div class="theme-card-2">
                                             <div class="border-bottom-1 mb-3">
                                                 <p class="mb-3 fw-bold fs-15">Suscipit vitae cras  quis.</p>
@@ -142,7 +142,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-lg-6 col-12">
+                                    <div class="col-lg-6 col-12 mb-2">
                                         <div class="theme-card-2">
                                             <div class="border-bottom-1 mb-3">
                                                 <p class="mb-3 fw-bold fs-15">Vulputate vel dolor</p>

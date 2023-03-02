@@ -363,3 +363,53 @@ select.did-floating-select::-ms-expand {
 .page-content{
     padding:calc(50px + 1.5rem) calc(1.5rem / 2) 60px calc(1.5rem / 2);
 }
+.settings-container{
+    display: flex;
+}
+.settings-container .setting-navigation{
+    width: 22%;
+    padding: 20px 30px;
+    border-right: 1px solid #e6e8ea;
+    min-height: 100vh;
+}
+.settings-container .setting-navigation ul{
+    padding-left: 0;
+    margin-bottom: 0;
+    flex-direction: column;
+}
+.settings-container .setting-navigation ul li{
+    list-style: none;
+}
+.settings-container .setting-navigation ul li a{
+    padding: 10px 15px;
+    display: block;
+    font-weight: 600;
+}
+.settings-container .setting-navigation ul li a.active{
+    background-color: #f2f2f2;
+    border-left: 3px solid #2B5BFC;
+}
+.settings-container .setting-content{
+    width: 78%;
+}
+.settings-container .setting-header{
+    padding: 20px 30px;
+    border-bottom: 1px solid #e6e8ea;
+}
+.settings-container .setting-header h2{
+    font-size: 18px;
+    font-weight: 600;
+}
+.settings-container .setting-content-body{
+    padding: 0 30px;
+}
+.settings-container .setting-content-body .setting-item{
+    padding: 20px 0;
+    border-bottom: 1px solid #e6e8ea;
+}
+.text-theme-light-grey{
+    color: #0F2038;
+}
+.btn-custom{
+    padding: 4px 25px;
+}

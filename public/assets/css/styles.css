@@ -89,7 +89,7 @@
 }
 .bg-gray-light
 {
-    background-color:#f8f8f9;
+    background-color:var(--bg-gray-light);
 }
 .border-left-blue-3
 {

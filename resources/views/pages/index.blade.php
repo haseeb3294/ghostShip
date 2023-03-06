@@ -119,13 +119,13 @@
                                     <div class="row">
                                         <div class="bg-gray-light border-left-blue-3 py-3">
                                             <div class="col-12">
-                                                <div class="row">
+                                                <div class="row align-items-center">
                                                     <div class="col-sm-3">
                                                         <div class="d-flex align-items-center">
                                                             <div class="w-10">
                                                                 <span class="blue-marker me-3"></span>
                                                             </div>
-                                                            <span class="fs-18 font-theme fw-600 w-75">
+                                                            <span class="fs-15 font-theme fw-600 w-75">
                                                                 Taylor Blake
                                                             </span>
                                                         </div>
@@ -133,8 +133,8 @@
                                                     <div class="col-sm-9">
                                                         <div class="d-flex align-items-center">
                                                             <span class="text-light-pink fs-12 rounded">Design</span>
-                                                            <span class="fs-16 font-theme ms-3">Delighted Customers</span>
-                                                            <span class="fs-14 font-theme opacity-50 ms-4">Do we have the
+                                                            <span class="fs-14 font-theme ms-3">Delighted Customers</span>
+                                                            <span class="fs-13 font-theme opacity-50 ms-4">Do we have the
                                                                 logo for this one?</span>
                                                         </div>
                                                     </div>
@@ -144,20 +144,20 @@
                                         </div>
                                         <div class="py-3 border-bottom">
                                             <div class="col-12">
-                                                <div class="row">
+                                                <div class="row align-items-center">
                                                     <div class="col-sm-3">
                                                         <div class="d-flex align-items-center">
                                                             <span class="w-10"></span>
-                                                            <span class="fs-18 font-theme fw-600">
+                                                            <span class="fs-15 font-theme fw-600">
                                                                 Rahul,Conrad,Vivek
                                                             </span>
                                                         </div>
                                                     </div>
                                                     <div class="col-sm-9">
                                                         <div class="d-flex align-items-center">
-                                                            <span class="fs-16 font-theme">Diam sed placerat fermentum
+                                                            <span class="fs-14 font-theme">Diam sed placerat fermentum
                                                                 arcu</span>
-                                                            <span class="fs-14 font-theme opacity-50 ms-4">Eu auctor sit
+                                                            <span class="fs-13 font-theme opacity-50 ms-4">Eu auctor sit
                                                                 porttitor cras fringilla odio tortor. Leo ut eu vivamus
                                                                 et.</span>
                                                         </div>
@@ -168,22 +168,22 @@
                                         </div>
                                         <div class="py-3 border-bottom">
                                             <div class="col-12">
-                                                <div class="row">
+                                                <div class="row align-items-center">
                                                     <div class="col-sm-3">
                                                         <div class="d-flex align-items-center">
                                                             <div class="w-10">
                                                                 <span class="blue-marker me-3"></span>
                                                             </div>
-                                                            <span class="fs-18 font-theme fw-600">
+                                                            <span class="fs-15 font-theme fw-600">
                                                                 Devon Lane
                                                             </span>
                                                         </div>
                                                     </div>
                                                     <div class="col-sm-9">
                                                         <div class="d-flex align-items-center">
-                                                            <span class="fs-16 font-theme">Amet risus amet magna
+                                                            <span class="fs-14 font-theme">Amet risus amet magna
                                                                 enim.</span>
-                                                            <span class="fs-14 font-theme opacity-50 ms-4">Etiam
+                                                            <span class="fs-13 font-theme opacity-50 ms-4">Etiam
                                                                 suspendisse ut odio vulputate mattis justo hac facilisis
                                                                 varius.</span>
                                                         </div>
@@ -194,13 +194,13 @@
                                         </div>
                                         <div class="py-3 border-bottom">
                                             <div class="col-12">
-                                                <div class="row">
+                                                <div class="row align-items-center">
                                                     <div class="col-sm-3">
                                                         <div class="d-flex align-items-center">
                                                             <div class="w-10">
                                                                 <span class="blue-marker me-3"></span>
                                                             </div>
-                                                            <span class="fs-18 font-theme fw-600">
+                                                            <span class="fs-15 font-theme fw-600">
                                                                 Devon Lane
                                                             </span>
                                                         </div>
@@ -208,9 +208,9 @@
                                                     <div class="col-sm-9">
                                                         <div class="d-flex align-items-center">
                                                             <span class="text-light-green fs-12 rounded">Growth</span>
-                                                            <span class="fs-16 font-theme ms-3">Amet risus amet magna
+                                                            <span class="fs-14 font-theme ms-3">Amet risus amet magna
                                                                 enim.</span>
-                                                            <span class="fs-14 font-theme opacity-50 ms-4">Etiam
+                                                            <span class="fs-13 font-theme opacity-50 ms-4">Etiam
                                                                 suspendisse ut odio vulputate mattis justo hac facilisis
                                                                 varius.</span>
                                                         </div>
@@ -221,22 +221,22 @@
                                         </div>
                                         <div class="py-3">
                                             <div class="col-12">
-                                                <div class="row">
+                                                <div class="row align-items-center">
                                                     <div class="col-sm-3">
                                                         <div class="d-flex align-items-center">
                                                             <div class="w-10">
                                                                 <span class="blue-marker me-3"></span>
                                                             </div>
-                                                            <span class="fs-18 font-theme fw-600">
+                                                            <span class="fs-15 font-theme fw-600">
                                                                 Kathryn Murphy
                                                             </span>
                                                         </div>
                                                     </div>
                                                     <div class="col-sm-9">
                                                         <div class="d-flex align-items-center">
-                                                            <span class="fs-16 font-theme">Amet tincidunt et id aliquam
+                                                            <span class="fs-14 font-theme">Amet tincidunt et id aliquam
                                                                 diam</span>
-                                                            <span class="fs-14 font-theme opacity-50 ms-4">Amet posuere at
+                                                            <span class="fs-13 font-theme opacity-50 ms-4">Amet posuere at
                                                                 urna felis nec quis consectetur amet. Adipiscing.</span>
                                                         </div>
                                                     </div>

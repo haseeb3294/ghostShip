@@ -97,7 +97,7 @@
                                                         type="button" role="tab" aria-controls="pills-gen-info"
                                                         aria-selected="true">1
                                                 </button>
-                                                <span class="form-wizard-title mt-3">
+                                                <span class="form-wizard-title mt-2">
                                                     Personal Info
                                                 </span>
                                             </li>
@@ -108,7 +108,7 @@
                                                         type="button" role="tab" aria-controls="pills-info-desc"
                                                         aria-selected="false">2
                                                 </button>
-                                                <span class="form-wizard-title mt-3">
+                                                <span class="form-wizard-title mt-2">
                                                     Select Plan
                                                 </span>
                                             </li>
@@ -119,7 +119,7 @@
                                                         type="button" role="tab" aria-controls="pills-success"
                                                         aria-selected="false">3
                                                 </button>
-                                                <span class="form-wizard-title left-30 mt-3">
+                                                <span class="form-wizard-title left-30 mt-2">
                                                     Payment info
                                                 </span>
                                             </li>
@@ -255,15 +255,15 @@
                                                                             <label for="checkbox"></label>
                                                                         </div>
                                                                         <div>
-                                                                            <h3 class="fs-18 font-theme">Basic Account Plan</h3>
-                                                                            <p class="mb-0 font-theme opacity-75 lh-38">
+                                                                            <h3 class="fs-16 font-theme">Basic Account Plan</h3>
+                                                                            <p class="mb-0 fs-13 font-theme opacity-75">
                                                                                 Turpis est suspendisse tortor in ipsum pretium sed. Auctor auctor volutpat et nec bibendum vel. Senectus purus.
                                                                             </p>
                                                                         </div>
                                                                     </div>
                                                                 </div>
                                                                 <div class="col-md-3">
-                                                                    <p class="mb-0 fs-22 fw-bold text-blue text-end">$20/month</p>
+                                                                    <p class="mb-0 fs-16 fw-bold text-blue text-end">$20/month</p>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -281,15 +281,15 @@
                                                                             <label for="checkbox1"></label>
                                                                         </div>
                                                                         <div>
-                                                                            <h3 class="fs-18 font-theme">Upgrade to pro account Plan</h3>
-                                                                            <p class="mb-0 font-theme opacity-75 lh-38">
+                                                                            <h3 class="fs-16 font-theme">Upgrade to pro account Plan</h3>
+                                                                            <p class="mb-0 font-theme fs-13 opacity-75">
                                                                                 At vitae vitae habitant elit tortor quis nisl. Cursus felis a risus molestie tristique. Commodo consectetur nisl sed.
                                                                             </p>
                                                                         </div>
                                                                     </div>
                                                                 </div>
                                                                 <div class="col-md-3">
-                                                                    <p class="mb-0 fs-22 fw-bold text-blue text-end">$30/month</p>
+                                                                    <p class="mb-0 fs-16 fw-bold text-blue text-end">$30/month</p>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -377,7 +377,7 @@
                                                                     </div>
                                                                 </div>
                                                             </div>
-                                                            <div class="col-12 mt-3 text-end">
+                                                            <div class="col-12 mt-2 text-end">
                                                                 <button type="button" class="ms-auto btn btn-secondary-theme fw-600 fs-18 px-5">Save
                                                                 </button>
                                                             </div>

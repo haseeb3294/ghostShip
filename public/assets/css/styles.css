@@ -467,3 +467,51 @@ select.did-floating-select::-ms-expand {
         display: block;
     }
 }
+.command-popup-item{
+    padding: 16px 22px;
+    width: 100%;
+    background: var(--vz-vertical-menu-bg-dark);
+    border-bottom: 1px solid rgba(171, 178, 186, 0.3);
+}
+.command-popup-item.active{
+    background-color: var(--bg-gray-light);
+}
+.command-popup-item.active .theme-badge{
+    background-color: var(--vz-theme-badge-active-background-color);
+}
+.command-popup-item .text{
+    font-size: 13px;
+    color: var(--vz-font-color-theme);
+    font-weight: 500;
+}
+.theme-badge{
+    padding: 5px 16px;
+    background-color: var(--vz-theme-badge-background-color);
+    font-size: 10px;
+    border-radius: 5px;
+}
+.command-popup-input{
+    width: 100%;
+    outline: 0;
+    border: none;
+    background: transparent;
+    color: var(--vz-font-color-theme);
+}
+.command-popup-input:focus-visible{
+    outline: 0;
+    border: none;
+    background: transparent;
+}
+.command-popup-input:focus{
+    outline: 0;
+    border: none;  
+    background: transparent; 
+}
+.command-popup-input:visited{
+    outline: 0;
+    border: none; 
+    background: transparent;  
+}
+#commandsModal .modal-header{
+    background: var(--vz-vertical-menu-bg-dark);
+}

@@ -642,6 +642,74 @@
 {{--    </div>--}}
 {{--</div>--}}
 
+{{-- modals --}}
+<div class="modal fade" id="commandsModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header border-bottom-1">
+          <div class="d-flex align-items-center gap-2">
+             <i class="mdi mdi-apple-keyboard-command fs-18 icon-theme"></i>
+             <h5 class="mb-0 fw-bold fs-15">Ghostship Commands</h5>
+          </div>
+        </div>
+        <div class="modal-body p-0">
+            <div class="command-popup-item">
+                <input type="text" class="command-popup-input" name="command">
+            </div>
+            <div class="command-popup-item active">
+                <div class="d-flex align-items-center justify-content-between">
+                    <div class="d-flex align-items-center gap-2">
+                        <i class="mdi mdi-calendar icon-theme fs-18"></i>
+                        <p class="mb-0 text">Calendar</p>
+                    </div>
+                    <div class="d-flex align-items-center gap-2">
+                        <span class="theme-badge">Ctrl</span>
+                        <span class="theme-badge">Alt</span>
+                        <span class="theme-badge">1</span>
+                    </div>
+                </div>
+            </div>
+            <div class="command-popup-item">
+                <div class="d-flex align-items-center justify-content-between">
+                    <div class="d-flex align-items-center gap-2">
+                        <i class="mdi mdi-login icon-theme fs-18"></i>
+                        <p class="mb-0 text">Login</p>
+                    </div>
+                    <div class="d-flex align-items-center gap-2">
+                        <span class="theme-badge">Ctrl</span>
+                        <span class="theme-badge">L</span>
+                    </div>
+                </div>
+            </div>
+            <div class="command-popup-item">
+                <div class="d-flex align-items-center justify-content-between">
+                    <div class="d-flex align-items-center gap-2">
+                        <i class="mdi mdi-newspaper-variant-outline icon-theme fs-18"></i>
+                        <p class="mb-0 text">Today News</p>
+                    </div>
+                    <div class="d-flex align-items-center gap-2">
+                        <span class="theme-badge"><i class="mdi mdi-apple-keyboard-command"></i></span>
+                        <span class="theme-badge">Ctrl</span>
+                        <span class="theme-badge">N</span>
+                    </div>
+                </div>
+            </div>
+            <div class="command-popup-item">
+                <div class="d-flex align-items-center justify-content-between">
+                    <div class="d-flex align-items-center gap-2">
+                        <i class="mdi mdi-twitter icon-theme fs-18"></i>
+                        <p class="mb-0 text">Tweet</p>
+                    </div>
+                    <div class="d-flex align-items-center gap-2">
+                        <span class="theme-badge">Ctrl</span>
+                        <span class="theme-badge">T</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
+</div>
 <!-- JAVASCRIPT -->
 @include('includes.scripts')
 @yield('custom-scripts')

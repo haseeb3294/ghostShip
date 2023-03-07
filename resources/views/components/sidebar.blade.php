@@ -98,7 +98,7 @@
                             <span>Checkout</span>
                         </div>
                         <div class=" conversation-section mb-3">
-                            <a href="javascript: void(0);" class="d-flex align-items-center">
+                            <a href="javascript: void(0);" data-bs-toggle="modal" data-bs-target="#commandsModal" class="d-flex align-items-center">
                                 <i class="ri-add-line me-1 fs-14"></i>
                                 <span class="fs-15 text-black fw-500">More</span>
                             </a>

@@ -37,7 +37,6 @@
                     </div>
                 </div>
                 <div class="container-fluid">
-
                     <div class="conversation">
                         <div class="d-flex conversation-section align-items-center gap-2">
                             <span>

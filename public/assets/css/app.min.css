@@ -135,6 +135,7 @@
     --vz-round-label-background-color: #E5EBFB;
     --vz-theme-badge-background-color: #F7F8F9;
     --vz-theme-badge-active-background-color: #ffffff;
+    --vz-scroll-bar-thumb-background: #d8d8d8;
 }
 
 [data-layout-mode=dark] {
@@ -242,6 +243,7 @@
     --vz-round-label-background-color: #22263B;
     --vz-theme-badge-background-color: rgba(45, 49, 69, 0.8);
     --vz-theme-badge-active-background-color: rgba(45, 49, 69, 0.8);
+    --vz-scroll-bar-thumb-background: #22263b;
 }
 
 [data-sidebar=gradient] {

@@ -32,3 +32,11 @@ Route::get('/account-level', function () {
 Route::get('/settings', function () {
     return view('pages.settings');
 })->name('settings');
+
+Route::get('/summary', function () {
+    return view('pages.summary');
+})->name('summary');
+
+Route::get('/home-keywords', function () {
+    return view('pages.home_keywords');
+})->name('home_keywords');

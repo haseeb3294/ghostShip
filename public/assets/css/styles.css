@@ -624,3 +624,13 @@ select.did-floating-select::-ms-expand {
     background-color: transparent;
     color: var(--vz-text-theme-light-grey);
 }
+
+.search-text-input{
+    width: 100%;
+    outline: 0;
+    border: 0;
+    margin-bottom: 5px;
+    background-color: transparent;
+    color: var(--vz-text-theme-light-grey);
+}
+.text-theme-light-grey

@@ -12,22 +12,18 @@
                             <span></span>
                         </span>
                     </button>
-                    <div class="community-header-left-content">
+                    <div class="community-header-left-content d-flex align-items-center gap-2">
                         <div class="community-header-heading">
-                            <i class="icon-theme fs-18 mdi mdi-account-group"></i>
-                            <p class="mb-0 font-theme fs-12 fw-600 text-uppercase">Community</p>
+                            <img src="{{ asset('assets/images/icons/elearning.png') }}" height="25" alt="icon-img">
+                            <p class="mb-0 font-theme fs-13 fw-600">Community</p>
                         </div>
-                        <div class="d-flex align-items-center gap-3">
-                            <div class="d-flex align-items-center gap-1">
-                                <i class="icon-theme fs-14 mdi mdi-account-outline"></i>
-                                <span class="fs-11 text-theme-light">21</span>   
-                            </div>
-                            <div class="d-flex align-items-center gap-1">
-                                <i class="icon-theme fs-14 mdi mdi-pin-outline"></i>
-                                <span class="fs-11 text-theme-light">1</span>   
-                            </div>
-                            <a href="javascript:void(0)" class="text-theme-light fs-12">Create Group</a>
-                            <a href="javascript:void(0)" class="text-theme-light fs-12 d-flex align-items-center gap-1"><span>Add Party</span> <span class="mdi mdi-plus fs-16"></span></a>
+                        <div class="d-flex align-items-center">
+                            <i class="mdi mdi-circle-small text-danger" style="font-size:30px;margin-right:-5px;"></i> 
+                            <p class="mb-0 font-theme fs-12 fw-600">Live</p>
+                        </div>
+                        <div class="d-flex align-items-center gap-1 ms-2">
+                            <i class="mdi mdi-pound text-theme-light fs-14"></i> 
+                            <p class="mb-0 text-theme-light fs-12 fw-600">Ghostship chat</p>
                         </div>
                     </div>
                 </div>
@@ -69,64 +65,29 @@
     <div class="main-content layout-2">
         <div class="page-content scrollable-div h-100-auto px-0 overflow-hidden">
             <div class="conversation-messages scrollable-div h-92-auto px-3">
-                <div class="single-post border-bottom-1 pb-2 mb-3">
-                    <img src="{{ asset('assets/images/avatar/avatar1.png') }}" height="35" alt="img">
-                    <div class="single-post-content">
-                        <div class="d-flex align-items-center gap-2 mb-2 mt-1">
-                            <p class="mb-0 font-theme fs-14 fw-600">Harry Boone</p>  
-                            <p class="mb-0 fs-10">12:45 AM</p>
-                        </div>
-                        <p>Porta non vulputate amet sit ullamcorper nibh donec viverra. Ut morbi tellus pellentesque in diam in nunc sed. Felis a non id ornare. <span class="text-danger">Neque enim sit et suscipit ultricies lacus at.</span> Bibendum pellentesque lectus a varius. Nunc diam aliquam enim metus eu sit adipiscing amet. Congue ante sollicitudin adipiscing massa.<span class="text-success">Massa commodo cursus magna sit nulla convallis ac arcu.</span>Adipiscing semper suspendisse a risus. Pulvinar aliquam pretium amet pellentesque tortor ut viverra mauris scelerisque.</p>
-                    </div>
+                <div class="video-box mb-3">
+                    <img src="{{ asset('assets/images/video-call-img.png') }}" alt="img" class="img-fluid">
                 </div>
-                <div class="single-post border-bottom-1 pb-2 mb-3">
-                    <img src="{{ asset('assets/images/avatar/avatar2.png') }}" height="35" alt="img">
-                    <div class="single-post-content">
-                        <div class="d-flex align-items-center gap-2 mb-2 mt-1">
-                            <p class="mb-0 font-theme fs-14 fw-600">Darlene Robertson</p>  
-                            <p class="mb-0 fs-10">12:50 AM</p>
-                        </div>
-                        <p>Porta non vulputate amet sit ullamcorper nibh donec viverra. </p>
+                <div class="comments">
+                    {{-- single comment --}}
+                    <div class="d-flex align-items-center gap-2 mb-3">
+                        <p class="text-primary mb-0 fs-14">Eleanor Pena :</p>
+                        <p class="font-theme mb-0 fs-14">Massa justo sagittis purus habitant. Donec sed elementum semper.</p>
                     </div>
-                </div>
-                <div class="single-post border-bottom-1 pb-2 mb-3">
-                    <img src="{{ asset('assets/images/avatar/avatar3.png') }}" height="35" alt="img">
-                    <div class="single-post-content">
-                        <div class="d-flex align-items-center gap-2 mb-2 mt-1">
-                            <p class="mb-0 font-theme fs-14 fw-600">Kathryn Murphy</p>  
-                            <p class="mb-0 fs-10">12:51 AM</p>
-                        </div>
-                        <p>Porta non vulputate amet sit ullamcorper nibh donec viverra. <a href="javascript:void(0)">calendar.adidas.com</a></p>
+                    {{-- single comment --}}
+                    <div class="d-flex align-items-center gap-2 mb-3">
+                        <p class="text-theme-blue mb-0 fs-14">Devon Lane :</p>
+                        <p class="font-theme mb-0 fs-14">Suspendisse enim feugiat consectetur tincidunt accumsan. Lacus.</p>
                     </div>
-                </div>
-                <div class="single-post border-bottom-1 pb-2 mb-3">
-                    <img src="{{ asset('assets/images/avatar/avatar1.png') }}" height="35" alt="img">
-                    <div class="single-post-content">
-                        <div class="d-flex align-items-center gap-2 mb-2 mt-1">
-                            <p class="mb-0 font-theme fs-14 fw-600">Harry Boone</p>  
-                            <p class="mb-0 fs-10">12:45 AM</p>
-                        </div>
-                        <p>Porta non vulputate amet sit ullamcorper nibh donec viverra. Ut morbi tellus pellentesque in diam in nunc sed. Felis a non id ornare. <span class="text-danger">Neque enim sit et suscipit ultricies lacus at.</span> Bibendum pellentesque lectus a varius. Nunc diam aliquam enim metus eu sit adipiscing amet. Congue ante sollicitudin adipiscing massa.<span class="text-success">Massa commodo cursus magna sit nulla convallis ac arcu.</span>Adipiscing semper suspendisse a risus. Pulvinar aliquam pretium amet pellentesque tortor ut viverra mauris scelerisque.</p>
+                    {{-- single comment --}}
+                    <div class="d-flex align-items-center gap-2 mb-3">
+                        <p class="text-danger mb-0 fs-14">Eleanor Pena :</p>
+                        <p class="font-theme mb-0 fs-14">Massa justo sagittis purus habitant. Donec sed elementum semper.</p>
                     </div>
-                </div>
-                <div class="single-post border-bottom-1 pb-2 mb-3">
-                    <img src="{{ asset('assets/images/avatar/avatar2.png') }}" height="35" alt="img">
-                    <div class="single-post-content">
-                        <div class="d-flex align-items-center gap-2 mb-2 mt-1">
-                            <p class="mb-0 font-theme fs-14 fw-600">Darlene Robertson</p>  
-                            <p class="mb-0 fs-10">12:50 AM</p>
-                        </div>
-                        <p>Porta non vulputate amet sit ullamcorper nibh donec viverra. </p>
-                    </div>
-                </div>
-                <div class="single-post border-bottom-1 pb-2">
-                    <img src="{{ asset('assets/images/avatar/avatar3.png') }}" height="35" alt="img">
-                    <div class="single-post-content">
-                        <div class="d-flex align-items-center gap-2 mb-2 mt-1">
-                            <p class="mb-0 font-theme fs-14 fw-600">Kathryn Murphy</p>  
-                            <p class="mb-0 fs-10">12:51 AM</p>
-                        </div>
-                        <p>Porta non vulputate amet sit ullamcorper nibh donec viverra. <a href="javascript:void(0)">calendar.adidas.com</a></p>
+                    {{-- single comment --}}
+                    <div class="d-flex align-items-center gap-2 mb-3">
+                        <p class="text-theme-pink mb-0 fs-14">Devon Lane :</p>
+                        <p class="font-theme mb-0 fs-14">Suspendisse enim feugiat consectetur tincidunt accumsan. Lacus.</p>
                     </div>
                 </div>
             </div>
@@ -170,7 +131,10 @@
     </div>
     <div class="right-bar">
         <div class="right-bar-header">
-            {{-- <p class="fs-13 mb-0 font-theme fw-600">Off-White Nike Virgil Abloh V - Black $199</p> --}}
+            <div class="d-flex align-items-center gap-2 w-100">
+                <i class="text-theme-light-grey fs-20 mdi mdi-magnify"></i>
+                <input type="text" class="search-text-input mb-0 fs-14" placeholder="Search">
+            </div>
         </div>
         <div class="right-bar-content scrollable-div">
             <div class="conversation">

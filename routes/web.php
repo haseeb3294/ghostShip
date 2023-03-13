@@ -44,3 +44,7 @@ Route::get('/home-keywords', function () {
 Route::get('/community-v3', function () {
     return view('pages.community_v3');
 })->name('community_v3');
+
+Route::get('/community-v3-video', function () {
+    return view('pages.community_v3_video');
+})->name('community_v3_video');

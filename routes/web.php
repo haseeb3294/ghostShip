@@ -40,3 +40,7 @@ Route::get('/summary', function () {
 Route::get('/home-keywords', function () {
     return view('pages.home_keywords');
 })->name('home_keywords');
+
+Route::get('/community-v3', function () {
+    return view('pages.community_v3');
+})->name('community_v3');

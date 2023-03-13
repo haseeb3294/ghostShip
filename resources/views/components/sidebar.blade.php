@@ -24,7 +24,7 @@
                         <a href="javascript: void(0);" class="sidebar-icons">
                             <i class="bx bx-info-circle icon-theme fs-18"></i>
                         </a>
-                        <a href="javascript: void(0);" class="sidebar-icons">
+                        <a href="{{ route('settings') }}" class="sidebar-icons">
                             <i class="bx bx-cog icon-theme fs-18"></i>
                         </a>
                     </div>
@@ -108,9 +108,11 @@
                     <div class="conversation">
                         <div class="d-flex conversation-section align-items-center gap-2">
                             <i class="mdi mdi-account-group-outline icon-theme fs-24    "></i>
-                            <span class="text-uppercase text-black fw-bold">COMMUNITY</span>
+                            <a href="{{ route('community_v3') }}">
+                                <span class="text-uppercase text-black fw-bold">COMMUNITY</span>
+                            </a>
                         </div>
-                        <a href="javascript: void(0);" class="d-flex conversation-section mb-5 align-items-center gap-1">
+                        <a href="{{ route('signup') }}" class="d-flex conversation-section mb-5 align-items-center gap-1">
                             <i class="bx bx-medal icon-theme fs-22"></i>   
                             <span>Upgrade to Pro</span>
                         </a>

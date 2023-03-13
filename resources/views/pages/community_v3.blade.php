@@ -27,7 +27,7 @@
                                 <span class="fs-11 text-theme-light">1</span>   
                             </div>
                             <a href="javascript:void(0)" class="text-theme-light fs-12">Create Group</a>
-                            <a href="javascript:void(0)" class="text-theme-light fs-12 d-flex align-items-center gap-1"><span>Add Party</span> <span class="mdi mdi-plus fs-16"></span></a>
+                            <a href="{{ route('community_v3_video') }}" class="text-theme-light fs-12 d-flex align-items-center gap-1"><span>Add Party</span> <span class="mdi mdi-plus fs-16"></span></a>
                         </div>
                     </div>
                 </div>

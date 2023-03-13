@@ -57,7 +57,7 @@
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link">
+                                    <a class="nav-link" href="{{ route('summary') }}">
                                         <div class="d-flex align-items-center">
                                             <i class="ri-add-line me-1 fs-14"></i>
                                             <span>More</span>

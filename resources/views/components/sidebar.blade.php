@@ -21,15 +21,22 @@
                             <input class="form-control form-control-sm border-0" type="text"
                                 placeholder="How can I help you..?">
                         </form>
-                        <a href="javascript: void(0);" class="sidebar-icons">
-                            <i class="bx bx-info-circle icon-theme fs-18"></i>
-                        </a>
-                        <a href="{{ route('settings') }}" class="sidebar-icons">
-                            <i class="bx bx-cog icon-theme fs-18"></i>
-                        </a>
+                        <div class="d-flex align-items-center gap-2">
+                            <a href="javascript: void(0);" class="sidebar-icons">
+                                <i class="bx bx-info-circle icon-theme fs-18"></i>
+                            </a>
+                            <a href="{{ route('settings') }}" class="sidebar-icons">
+                                <i class="bx bx-cog icon-theme fs-18"></i>
+                            </a>
+                            <a href="{{ route('index') }}" class="sidebar-icons">
+                                <i class="bx bx-home icon-theme fs-18"></i>
+                            </a>
+                        </div>
                     </div>
                     <div class="d-flex h-50-px align-items-center justify-content-between border-bottom-1 px-3">
-                        <span class="fs-12 fw-600">Ghostship</span>
+                        <a href="{{ route('index') }}" class="font-theme">
+                            <span class="fs-12 fw-600">Ghostship</span>
+                        </a>
                         <span class="fs-10">...Thinking</span>
                     </div>
                     <div class="d-flex h-50-px align-items-center justify-content-between border-bottom-1 px-3">

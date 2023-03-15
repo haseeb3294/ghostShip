@@ -322,21 +322,21 @@
                                                                     <div class="icon-group">
                                                                         <img src="{{ asset('assets/images/figma/info-icon.png') }}" alt="icon">
                                                                     </div>
-                                                                    <p class="mb-0 fs-15">Verify the information before proceeding</p>
+                                                                    <p class="mb-0 fs-16">Verify the information before proceeding</p>
                                                                 </div>
                                                                 <div class="d-flex align-items-center justify-content-between mb-3">
-                                                                    <p class="mb-0">Basic Subscription</p>
-                                                                    <p class="mb-0 text-theme-blue">$20.00</p>
+                                                                    <p class="mb-0 fs-15">Basic Subscription</p>
+                                                                    <p class="mb-0 text-theme-blue fs-15">$20.00</p>
                                                                 </div>
                                                                 <div class="d-flex align-items-center justify-content-between">
-                                                                    <p class="mb-0">Tax</p>
-                                                                    <p class="mb-0 text-theme-blue">$5.00</p>
+                                                                    <p class="mb-0 fs-15">Tax</p>
+                                                                    <p class="mb-0 text-theme-blue fs-15">$5.00</p>
                                                                 </div>
                                                             </div>
                                                             <div class="card-footer">
                                                                 <div class="d-flex align-items-center justify-content-between">
-                                                                    <p class="mb-0 fs-15 fw-bold">Subtotal</p>
-                                                                    <p class="mb-0 fs-15 fw-bold text-theme-blue">$25.00</p>
+                                                                    <p class="mb-0 fs-16 fw-bold">Subtotal</p>
+                                                                    <p class="mb-0 fs-16 fw-bold text-theme-blue">$25.00</p>
                                                                 </div>
                                                             </div>
                                                         </div>

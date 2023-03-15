@@ -85,7 +85,7 @@
                                     <div class="col-lg-6 col-12 mb-2">
                                         <div class="theme-card-2">
                                             <div class="border-bottom-1 mb-3">
-                                                <p class="mb-3 fw-bold fs-15">Suscipit vitae cras  quis.</p>
+                                                <p class="mb-3 fw-bold fs-16">Suscipit vitae cras  quis.</p>
                                                 <p class="text-theme-light mb-3 lh-24">Tincidunt leo adipiscing tincidunt rutrum fringilla quam. Varius phasellus purus scelerisque ultrices in volutpat dictum leo sit. Sit aliquet feugiat dignissim consectetur placerat ipsum sollicitudin suspendisse auctor.</p>
                                             </div>
                                             <div>
@@ -145,7 +145,7 @@
                                     <div class="col-lg-6 col-12 mb-2">
                                         <div class="theme-card-2">
                                             <div class="border-bottom-1 mb-3">
-                                                <p class="mb-3 fw-bold fs-15">Vulputate vel dolor</p>
+                                                <p class="mb-3 fw-bold fs-16">Vulputate vel dolor</p>
                                                 <p class="text-theme-light mb-3 lh-24">Nisl condimentum lectus mauris tortor. Malesuada morbi aliquet id feugiat enim sit diam. In massa eget pellentesque mattis rutrum erat integer. Massa suspendisse enim sit vitae mi cras tellus nulla id. Viverra suspendisse sed aenean velit sit</p>
                                             </div>
                                             <div>

@@ -110,7 +110,7 @@
     background-color: var(--vz-font-color-blue);
     border-radius: 15px;
     color: white;
-    padding: 6px 40px !important;
+    padding: 10px 50px !important;
     border-radius: 8px !important;
     font-size: 16px !important;
 }
@@ -418,11 +418,13 @@ select.did-floating-select::-ms-expand {
 }
 .btn-custom{
     padding: 4px 25px;
+    font-weight: 600;
 }
 
 /* for toggle switch */
 .form-switch .form-check-input{
     width: 3em;
+    border: 1px solid #bfbfbf;
 }
 .form-check-input{
     height: 1.5em;

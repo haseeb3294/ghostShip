@@ -125,61 +125,61 @@
                             <div class="setting-content-body">
                                 <div class="setting-item">
                                     <div class="d-flex align-items-center justify-content-between gap-2 mb-1">
-                                        <p class="mb-0 fw-600 fs-14">Add webhooks to select specific channels/servers from discord/slack</p>
+                                        <p class="mb-0 fw-600 fs-15">Add webhooks to select specific channels/servers from discord/slack</p>
                                         <a href="javascript:void(0)" class="btn btn-light text-dark btn-custom">Add</a>
                                     </div>
-                                    <p class="mb-0 fs-13 text-theme-light-grey">Adipiscing ut risus enim faucibus amet urna a orci. Mauris auctor.</p>
+                                    <p class="mb-0 fs-14 text-theme-light-grey">Adipiscing ut risus enim faucibus amet urna a orci. Mauris auctor.</p>
                                 </div>
                                 <div class="setting-item">
                                     <div class="d-flex align-items-center justify-content-between gap-2 mb-1">
-                                        <p class="mb-0 fw-600 fs-14">Add specific users/hashtags from twitter</p>
+                                        <p class="mb-0 fw-600 fs-15">Add specific users/hashtags from twitter</p>
                                         <a href="javascript:void(0)" class="btn btn-light text-dark btn-custom">Add</a>
                                     </div>
-                                    <p class="mb-0 fs-13 text-theme-light-grey">Tellus vulputate laoreet a pellentesque nisi fames consectetur at.  </p>
+                                    <p class="mb-0 fs-14 text-theme-light-grey">Tellus vulputate laoreet a pellentesque nisi fames consectetur at.  </p>
                                 </div>
                                 <div class="setting-item">
                                     <div class="d-flex align-items-center justify-content-between gap-2 mb-1">
-                                        <p class="mb-0 fw-600 fs-14">Accounts connected (authorized apps)</p>
+                                        <p class="mb-0 fw-600 fs-15">Accounts connected (authorized apps)</p>
                                         <div class="form-check form-switch me-3">
                                             <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" />
                                         </div>
                                     </div>
-                                    <p class="mb-0 fs-13 text-theme-light-grey">Massa arcu donec donec scelerisque phasellus tellus sed risus.</p>
+                                    <p class="mb-0 fs-14 text-theme-light-grey">Massa arcu donec donec scelerisque phasellus tellus sed risus.</p>
                                 </div>
                                 <div class="setting-item">
                                     <div class="d-flex align-items-center justify-content-between gap-2 mb-1">
-                                        <p class="mb-0 fw-600 fs-14">Add unique colors/sounds to keywords</p>
+                                        <p class="mb-0 fw-600 fs-15">Add unique colors/sounds to keywords</p>
                                         <a href="javascript:void(0)" class="btn btn-light text-dark btn-custom">Add</a>
                                     </div>
-                                    <p class="mb-0 fs-13 text-theme-light-grey">Vitae euismod urna adipiscing in sagittis est amet. Ultrices tristique.</p>
+                                    <p class="mb-0 fs-14 text-theme-light-grey">Vitae euismod urna adipiscing in sagittis est amet. Ultrices tristique.</p>
                                 </div>
                                 <div class="setting-item">
                                     <div class="d-flex align-items-center justify-content-between gap-2 mb-1">
-                                        <p class="mb-0 fw-600 fs-14">Enable/disable notifications, notifications schedule</p>
+                                        <p class="mb-0 fw-600 fs-15">Enable/disable notifications, notifications schedule</p>
                                         <a href="javascript:void(0)" class="btn btn-light text-dark btn-custom">Add</a>
                                     </div>
-                                    <p class="mb-0 fs-13 text-theme-light-grey">Nunc elit semper diam risus fames. Vulputate cras tempus id nulla.</p>
+                                    <p class="mb-0 fs-14 text-theme-light-grey">Nunc elit semper diam risus fames. Vulputate cras tempus id nulla.</p>
                                 </div>
                                 <div class="setting-item">
                                     <div class="d-flex align-items-center justify-content-between gap-2 mb-1">
-                                        <p class="mb-0 fw-600 fs-14">Two-factor authentication</p>
+                                        <p class="mb-0 fw-600 fs-15">Two-factor authentication</p>
                                         <div class="form-check form-switch me-3">
                                             <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" />
                                         </div>
                                     </div>
-                                    <p class="mb-0 fs-13 text-theme-light-grey">Tempor arcu massa dapibus consequat et aliquam morbi sit. Quam.</p>
+                                    <p class="mb-0 fs-14 text-theme-light-grey">Tempor arcu massa dapibus consequat et aliquam morbi sit. Quam.</p>
                                 </div>
                                 <div class="setting-item">
                                     <div class="d-flex align-items-center justify-content-between gap-2 mb-1">
-                                        <p class="mb-0 fw-600 fs-14">Billing</p>
+                                        <p class="mb-0 fw-600 fs-15">Billing</p>
                                     </div>
-                                    <p class="mb-0 fs-13 text-theme-light-grey">Cras vitae eu in vitae nunc sit. Mauris sapien eu quam cras vel.</p>
+                                    <p class="mb-0 fs-14 text-theme-light-grey">Cras vitae eu in vitae nunc sit. Mauris sapien eu quam cras vel.</p>
                                 </div>
                                 <div class="setting-item">
                                     <div class="d-flex align-items-center justify-content-between gap-2 mb-1">
-                                        <p class="mb-0 fw-600 fs-14">Signout</p>
+                                        <p class="mb-0 fw-600 fs-15">Signout</p>
                                     </div>
-                                    <p class="mb-0 fs-13 text-theme-light-grey">Est augue ornare in leo. Duis ultricies commodo lobortis vitae.</p>
+                                    <p class="mb-0 fs-14 text-theme-light-grey">Est augue ornare in leo. Duis ultricies commodo lobortis vitae.</p>
                                 </div>
                             </div>
                         </div>

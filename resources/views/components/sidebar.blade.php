@@ -23,7 +23,7 @@
                         </form>
                         <div class="d-flex align-items-center gap-2">
                             <a href="javascript: void(0);" class="sidebar-icons">
-                                <i class="bx bx-info-circle icon-theme fs-18"></i>
+                                <i class="bx bx-help-circle icon-theme fs-18"></i>
                             </a>
                             <a href="{{ route('settings') }}" class="sidebar-icons">
                                 <i class="bx bx-cog icon-theme fs-18"></i>
@@ -35,7 +35,7 @@
                     </div>
                     <div class="d-flex h-50-px align-items-center justify-content-between border-bottom-1 px-3">
                         <a href="{{ route('index') }}" class="font-theme">
-                            <span class="fs-12 fw-600">Ghostship</span>
+                            <span class="fs-13 fw-600 text-uppercase">Ghostship</span>
                         </a>
                         <span class="fs-10">...Thinking</span>
                     </div>
@@ -45,21 +45,21 @@
                 </div>
                 <div class="container-fluid">
                     <div class="conversation">
-                        <div class="d-flex conversation-section align-items-center gap-2">
+                        <div class="d-flex conversation-section align-items-start gap-3">
                             <span>
-                                <i class="bx bx-message icon-theme fs-18"></i>
+                                <i class="bx bx-message icon-theme fs-18 mt-1"></i>
                             </span>
                             <span>What shoes are releasing this month?</span>
                         </div>
-                        <div class="d-flex conversation-section align-items-center gap-2">
+                        <div class="d-flex conversation-section align-items-start gap-3">
                             <span>
-                                <i class="bx bx-message icon-theme fs-18"></i>
+                                <i class="bx bx-message icon-theme fs-18 mt-1"></i>
                             </span>
                             <span>Can you let me know what raffles are open?</span>
                         </div>
-                        <div class="d-flex conversation-section align-items-center gap-2">
+                        <div class="d-flex conversation-section align-items-start gap-3">
                             <span>
-                                <i class="bx bx-message icon-theme fs-18"></i>
+                                <i class="bx bx-message icon-theme fs-18 mt-1"></i>
                             </span>
                             <span>What notifications did I miss in the last hour?</span>
                         </div>
@@ -79,28 +79,28 @@
                             </span>
                             <span class="text-uppercase text-black fw-bold">Commands</span>
                         </div>
-                        <div class="d-flex conversation-section align-items-center gap-1">
-                            <i class="bx bx-hash icon-theme fs-18"></i>
+                        <div class="d-flex conversation-section align-items-center gap-3">
+                            <i class="mdi mdi-react icon-theme fs-18"></i>
                             <span>Release calendar</span>
                         </div>
-                        <div class="d-flex conversation-section align-items-center gap-2">
-                            <i class="bx bx-hash icon-theme fs-18"></i>
+                        <div class="d-flex conversation-section align-items-center gap-3">
+                            <i class="mdi mdi-react icon-theme fs-18"></i>
                             <span>Login</span>
                         </div>
-                        <div class="d-flex conversation-section align-items-center gap-2">
-                            <i class="bx bx-hash icon-theme fs-18"></i>
+                        <div class="d-flex conversation-section align-items-center gap-3">
+                            <i class="mdi mdi-react icon-theme fs-18"></i>
                             <span>Raffles</span>
                         </div>
-                        <div class="d-flex conversation-section align-items-center gap-2">
-                            <i class="bx bx-hash icon-theme fs-18"></i>
+                        <div class="d-flex conversation-section align-items-center gap-3">
+                            <i class="mdi mdi-react icon-theme fs-18"></i>
                             <span>News</span>
                         </div>
-                        <div class="d-flex conversation-section align-items-center gap-2">
-                            <i class="bx bx-hash icon-theme fs-18"></i>
+                        <div class="d-flex conversation-section align-items-center gap-3">
+                            <i class="mdi mdi-react icon-theme fs-18"></i>
                             <span>Tweet</span>
                         </div>
-                        <div class="d-flex conversation-section align-items-center gap-2">
-                            <i class="bx bx-hash icon-theme fs-18"></i>
+                        <div class="d-flex conversation-section align-items-center gap-3">
+                            <i class="mdi mdi-react icon-theme fs-18"></i>
                             <span>Checkout</span>
                         </div>
                         <div class=" conversation-section mb-3">

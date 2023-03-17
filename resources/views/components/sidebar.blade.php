@@ -65,7 +65,7 @@
                     <div class="conversation">
                         <div class="d-flex conversation-section align-items-center gap-1 sidebar-commands-title" style="cursor:pointer;">
                             <span>
-                                <img src="http://127.0.0.1:8000/assets/images/figma/ghostship.png" height="45" width="45" alt="">
+                                <img src="{{ asset('assets/images/figma/ghostship.png') }}" height="45" width="45" alt="">
                             </span>
                             <span class="text-uppercase text-black fw-bold">Commands</span>
                             <span class="mb-2 command-title-icon"><i class="bx bx-help-circle icon-theme fs-14"></i></span>

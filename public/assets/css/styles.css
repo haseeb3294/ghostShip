@@ -552,7 +552,7 @@ select.did-floating-select::-ms-expand {
     padding-left: 1rem!important;
 }
 .right-bar-content{
-    height: 80vh;
+    height: 90vh;
     overflow-y: auto;
 }
 
@@ -563,11 +563,11 @@ select.did-floating-select::-ms-expand {
 
 @media only screen and (min-width: 768px) {
     .main-content.layout-2{
-        margin-left: 293px;
+        /* margin-left: 293px; */
         margin-right: 293px;
     }
     .page-topbar-layout-2{
-        left: 293px !important;
+        /* left: 293px !important; */
         right: 293px !important;
     }
 }
@@ -634,4 +634,11 @@ select.did-floating-select::-ms-expand {
     margin-bottom: 5px;
     background-color: transparent;
     color: var(--vz-text-theme-light-grey);
+}
+.command-title-icon{
+    opacity: 0 !important;
+}
+.sidebar-commands-title:hover .command-title-icon{
+    transition: all 0.3s;
+    opacity: 1 !important;
 }

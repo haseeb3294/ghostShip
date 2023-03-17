@@ -196,7 +196,7 @@
                 </div>
                 <div class="d-flex conversation-section align-items-center gap-2">
                     <img src="{{ asset('assets/images/icons/nortion.png') }}" height="16" alt="icon">
-                    <span>Nortion</span>
+                    <span>Notion</span>
                 </div>
             </div>
             <div class="conversation">

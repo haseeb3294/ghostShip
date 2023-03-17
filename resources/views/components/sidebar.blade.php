@@ -22,9 +22,6 @@
                                 placeholder="How can I help you..?">
                         </form>
                         <div class="d-flex align-items-center gap-2">
-                            <a href="javascript: void(0);" class="sidebar-icons">
-                                <i class="bx bx-help-circle icon-theme fs-18"></i>
-                            </a>
                             <a href="{{ route('settings') }}" class="sidebar-icons">
                                 <i class="bx bx-cog icon-theme fs-18"></i>
                             </a>
@@ -37,7 +34,6 @@
                         <a href="{{ route('index') }}" class="font-theme">
                             <span class="fs-13 fw-600 text-uppercase">Ghostship</span>
                         </a>
-                        <span class="fs-10">...Thinking</span>
                     </div>
                     <div class="d-flex h-50-px align-items-center justify-content-between border-bottom-1 px-3">
                         <span class="fs-14 fw-600">Recent Conversations</span>
@@ -63,21 +59,16 @@
                             </span>
                             <span>What notifications did I miss in the last hour?</span>
                         </div>
-                        <div class=" conversation-section mb-3">
-                            <a href="javascript: void(0);" class="d-flex align-items-center">
-                                <i class="ri-add-line me-1 fs-14"></i>
-                                <span class="fs-15 text-black fw-500">More</span>
-                            </a>
-                        </div>
                     </div>
                 </div>
                 <div class="container-fluid">
                     <div class="conversation">
-                        <div class="d-flex conversation-section align-items-center gap-2">
+                        <div class="d-flex conversation-section align-items-center gap-1 sidebar-commands-title" style="cursor:pointer;">
                             <span>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: var(--vz-icon-theme-color);transform: ;msFilter:;"><path d="M14.82 4.26a10.14 10.14 0 0 0-.53 1.1 14.66 14.66 0 0 0-4.58 0 10.14 10.14 0 0 0-.53-1.1 16 16 0 0 0-4.13 1.3 17.33 17.33 0 0 0-3 11.59 16.6 16.6 0 0 0 5.07 2.59A12.89 12.89 0 0 0 8.23 18a9.65 9.65 0 0 1-1.71-.83 3.39 3.39 0 0 0 .42-.33 11.66 11.66 0 0 0 10.12 0q.21.18.42.33a10.84 10.84 0 0 1-1.71.84 12.41 12.41 0 0 0 1.08 1.78 16.44 16.44 0 0 0 5.06-2.59 17.22 17.22 0 0 0-3-11.59 16.09 16.09 0 0 0-4.09-1.35zM8.68 14.81a1.94 1.94 0 0 1-1.8-2 1.93 1.93 0 0 1 1.8-2 1.93 1.93 0 0 1 1.8 2 1.93 1.93 0 0 1-1.8 2zm6.64 0a1.94 1.94 0 0 1-1.8-2 1.93 1.93 0 0 1 1.8-2 1.92 1.92 0 0 1 1.8 2 1.92 1.92 0 0 1-1.8 2z"></path></svg>
+                                <img src="http://127.0.0.1:8000/assets/images/figma/ghostship.png" height="45" width="45" alt="">
                             </span>
                             <span class="text-uppercase text-black fw-bold">Commands</span>
+                            <span class="mb-2 command-title-icon"><i class="bx bx-help-circle icon-theme fs-14"></i></span>
                         </div>
                         <div class="d-flex conversation-section align-items-center gap-3">
                             <i class="mdi mdi-react icon-theme fs-18"></i>

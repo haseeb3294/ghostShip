@@ -294,7 +294,7 @@
                 </div>
             </div>
         </div>
-        <div class="right-bar-footer">
+        {{-- <div class="right-bar-footer">
             <p class="fs-13 mb-0 font-theme fw-600 text-uppercase">Ghostship</p>
             <div class="d-flex align-items-center gap-2">
                 <a href="javascript: void(0);" class="sidebar-icons">
@@ -304,7 +304,7 @@
                     <i class="bx bx-cog icon-theme fs-18"></i>
                 </a>
             </div>
-        </div>
+        </div> --}}
     </div>
 @endsection
 

@@ -110,10 +110,18 @@
                                 <span class="text-uppercase text-black fw-bold">COMMUNITY</span>
                             </a>
                         </div>
-                        <a href="{{ route('signup') }}" class="d-flex conversation-section mb-5 align-items-center gap-1">
+                        <a href="{{ route('signup') }}" class="d-flex conversation-section mb-4 align-items-center gap-1">
                             <i class="bx bx-medal icon-theme fs-22"></i>   
                             <span>Upgrade to Pro</span>
                         </a>
+                    </div>
+                    <div class="conversation">
+                        <div class="d-flex conversation-section align-items-center gap-2">
+                            <i class="mdi mdi-logout icon-theme fs-18"></i>
+                            <a href="{{ route('user_logout') }}">
+                                <span class="text-uppercase text-black fw-bold fs-13">Logout</span>
+                            </a>
+                        </div>
                     </div>
                 </div>
                 <div class="container-fluid">

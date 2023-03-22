@@ -24,3 +24,7 @@
 
 <!-- form wizard init -->
 <script src="{{asset('assets/js/pages/form-wizard.init.js')}}"></script>
+
+<script src="{{asset('assets/js/validate.min.js')}}"></script>
+
+<script src="{{asset('assets/js/custom.js')}}"></script>

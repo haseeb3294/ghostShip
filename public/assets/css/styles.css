@@ -136,7 +136,7 @@
 }
 .did-floating-label-content {
     position: relative;
-    margin-bottom: 20px;
+    margin-bottom: 35px;
     height: 45px;
     line-height: 18px;
 }
@@ -158,7 +158,7 @@
 }
 
 .did-floating-input, .did-floating-select {
-    font-size: 14px;
+    font-size: 14px !important;
     display: block;
     width: 100%;
     height: 100%;
@@ -168,6 +168,7 @@
     border: 1px solid #ABB2BA4D;
     border-radius: 4px;
     box-sizing: border-box;
+    color: #374659 !important;
 }
 .did-floating-input:focus, .did-floating-select:focus {
     outline: none;
@@ -641,4 +642,23 @@ select.did-floating-select::-ms-expand {
 .sidebar-commands-title:hover .command-title-icon{
     transition: all 0.3s;
     opacity: 1 !important;
+}
+.w-40{
+    width: 40%;
+}
+
+.loading-bar {
+    background: #0033df;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999999999;
+    height: 3px;
+    transition: all 0.8s;
+}
+
+.error{
+    display: block;
+    color: #e30000;
+    font-size: 11px;
 }

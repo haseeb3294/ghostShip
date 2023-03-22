@@ -12,7 +12,7 @@
     <div class="d-flex align-items-center justify-content-center" style="min-height:100vh;">
         <div class="w-40 m-auto px-5 py-5 shadow-lg rounded">
             <div class="text-center mb-4">
-                <img src="http://127.0.0.1:8000/assets/images/figma/ghostship.png" height="80" width="80" alt="logo" class="mb-2">
+                <img src="{{ asset('assets/images/figma/ghostship.png') }}" height="80" width="80" alt="logo" class="mb-2">
                 <h1 class="mb-1 fw-bold fs-20">Ghostship</h1>
                 <p class="mb-0 fs-12">Register to continue to Ghostship</p>
             </div>

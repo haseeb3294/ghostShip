@@ -22,7 +22,8 @@ class AuthController extends Controller
             'password' => \Hash::make($request->password)
         ]);
         if ($register) {
-            event(new Registered($register));
+            $send_verification_email = event(new Registered($register));
+            dd($send_verification_email);
             return json_encode([
                 'success' => true,
                 'message' => 'Registered Successfully , please verify your email to login'

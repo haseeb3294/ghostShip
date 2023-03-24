@@ -72,6 +72,6 @@ Route::middleware('auth')->group(function(){
 
 Route::get('/user-logout',[AuthController::class,'user_logout'])->name('user_logout');
 
-Auth::routes();
+Auth::routes(['verify' => true]);
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

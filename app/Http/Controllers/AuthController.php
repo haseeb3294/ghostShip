@@ -11,7 +11,9 @@ class AuthController extends Controller
         $validate = \Validator::make($request->all(), [
             'name' => 'required',
             'email' => ['required', 'unique:users', 'email'],
-            'password' => 'required|min:6'
+            'username' => ['required', 'unique:users'],
+            'password' => 'required|min:6',
+            'phone' => 'required|numeric',
         ]);
         if ($validate->fails()) {
             return response()->json(["success" => false, 'message' => $validate->errors()->first()]);
@@ -19,7 +21,9 @@ class AuthController extends Controller
         $register = User::create([
             'name' => $request->name,
             'email' => $request->email,
-            'password' => \Hash::make($request->password)
+            'password' => \Hash::make($request->password),
+            'phone' => $request->phone,
+            'username' => $request->username
         ]);
         if ($register) {
             // $send_verification_email = event(new Registered($register));

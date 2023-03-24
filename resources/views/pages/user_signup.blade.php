@@ -26,7 +26,16 @@
                         <div class="mb-4">
                             <div class="did-floating-label-content">
                                 <input class="did-floating-input" type="text"
-                                    placeholder="" name="name" id="username" required>
+                                    placeholder="" name="name" id="name" required>
+                                <label class="did-floating-label" for="name">Name</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="mb-4">
+                            <div class="did-floating-label-content">
+                                <input class="did-floating-input" type="text"
+                                    placeholder="" name="username" id="username" required>
                                 <label class="did-floating-label" for="username">Username</label>
                             </div>
                         </div>
@@ -37,6 +46,15 @@
                                 <input class="did-floating-input" type="email"
                                     placeholder="" name="email" required>
                                 <label class="did-floating-label">Email Address</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="mb-4">
+                            <div class="did-floating-label-content">
+                                <input class="did-floating-input" type="number"
+                                    placeholder="" name="phone" id="phone" min="0" required>
+                                <label class="did-floating-label" for="phone">Phone</label>
                             </div>
                         </div>
                     </div>

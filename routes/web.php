@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\SlackController;
+use App\Http\Controllers\IndexController;
 
 /*
 |--------------------------------------------------------------------------
@@ -30,9 +31,7 @@ Route::middleware('guest')->group(function(){
 });
 
 Route::middleware('auth')->group(function(){
-    Route::get('/', function () {
-    return view('pages.index');
-    })->name('index');
+    Route::get('/',[IndexController::class,'index'])->name('index');
     
     Route::get('/waitList', function () {
     return view('pages.waitlist');

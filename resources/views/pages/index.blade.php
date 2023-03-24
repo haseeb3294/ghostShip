@@ -116,135 +116,44 @@
                             <!-- Tab panes -->
                             <div class="tab-content text-muted">
                                 <div class="tab-pane active" id="home2" role="tabpanel">
-                                    @if(!empty(auth()->user()->slack_access))
-                                        <div class="row">
-                                            <div class="bg-gray-light border-left-blue-3 py-3">
-                                                <div class="col-12">
-                                                    <div class="row align-items-center">
-                                                        <div class="col-sm-3">
-                                                            <div class="d-flex align-items-center">
-                                                                <div class="w-10">
-                                                                    <span class="blue-marker me-3"></span>
+                                    @if(!empty($slack_access))
+                                        <div class="row channels">
+                                            @if (!empty($slack['channels']))
+                                                @foreach ($slack['channels'] as $channel)
+                                                <div class="py-3 border-bottom {{ ($loop->index + 1 == 1) ? 'active' : '' }}">
+                                                    <div class="col-12">
+                                                        <div class="row align-items-center">
+                                                            <div class="col-12">
+                                                                <a href="javascript:void(0)">
+                                                                    <div class="d-flex align-items-center">
+                                                                        <div class="w-auto">
+                                                                            <span class="blue-marker me-3"></span>
+                                                                        </div>
+                                                                        <span class="fs-15 font-theme fw-600">
+                                                                            {{ ucfirst($channel['name']) }}
+                                                                        </span>
+                                                                    </div>
+                                                                </a>
+                                                            </div>
+                                                            {{-- <div class="col-sm-9">
+                                                                <div class="d-flex align-items-center">
+                                                                    <span class="fs-14 font-theme">Amet risus amet magna
+                                                                        enim.</span>
+                                                                    <span class="fs-13 font-theme opacity-50 ms-4">Etiam
+                                                                        suspendisse ut odio vulputate mattis justo hac facilisis
+                                                                        varius.</span>
                                                                 </div>
-                                                                <span class="fs-15 font-theme fw-600 w-75">
-                                                                    Taylor Blake
-                                                                </span>
-                                                            </div>
+                                                            </div> --}}
                                                         </div>
-                                                        <div class="col-sm-9">
-                                                            <div class="d-flex align-items-center">
-                                                                <span class="text-light-pink fs-12 rounded">Design</span>
-                                                                <span class="fs-14 font-theme ms-3">Delighted Customers</span>
-                                                                <span class="fs-13 font-theme opacity-50 ms-4">Do we have the
-                                                                    logo for this one?</span>
-                                                            </div>
-                                                        </div>
+    
                                                     </div>
-
                                                 </div>
-                                            </div>
-                                            <div class="py-3 border-bottom">
-                                                <div class="col-12">
-                                                    <div class="row align-items-center">
-                                                        <div class="col-sm-3">
-                                                            <div class="d-flex align-items-center">
-                                                                <span class="w-10"></span>
-                                                                <span class="fs-15 font-theme fw-600">
-                                                                    Rahul,Conrad,Vivek
-                                                                </span>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-sm-9">
-                                                            <div class="d-flex align-items-center">
-                                                                <span class="fs-14 font-theme">Diam sed placerat fermentum
-                                                                    arcu</span>
-                                                                <span class="fs-13 font-theme opacity-50 ms-4">Eu auctor sit
-                                                                    porttitor cras fringilla odio tortor. Leo ut eu vivamus
-                                                                    et.</span>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-
-                                                </div>
-                                            </div>
-                                            <div class="py-3 border-bottom">
-                                                <div class="col-12">
-                                                    <div class="row align-items-center">
-                                                        <div class="col-sm-3">
-                                                            <div class="d-flex align-items-center">
-                                                                <div class="w-10">
-                                                                    <span class="blue-marker me-3"></span>
-                                                                </div>
-                                                                <span class="fs-15 font-theme fw-600">
-                                                                    Devon Lane
-                                                                </span>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-sm-9">
-                                                            <div class="d-flex align-items-center">
-                                                                <span class="fs-14 font-theme">Amet risus amet magna
-                                                                    enim.</span>
-                                                                <span class="fs-13 font-theme opacity-50 ms-4">Etiam
-                                                                    suspendisse ut odio vulputate mattis justo hac facilisis
-                                                                    varius.</span>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-
-                                                </div>
-                                            </div>
-                                            <div class="py-3 border-bottom">
-                                                <div class="col-12">
-                                                    <div class="row align-items-center">
-                                                        <div class="col-sm-3">
-                                                            <div class="d-flex align-items-center">
-                                                                <div class="w-10">
-                                                                    <span class="blue-marker me-3"></span>
-                                                                </div>
-                                                                <span class="fs-15 font-theme fw-600">
-                                                                    Devon Lane
-                                                                </span>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-sm-9">
-                                                            <div class="d-flex align-items-center">
-                                                                <span class="text-light-green fs-12 rounded">Growth</span>
-                                                                <span class="fs-14 font-theme ms-3">Amet risus amet magna
-                                                                    enim.</span>
-                                                                <span class="fs-13 font-theme opacity-50 ms-4">Etiam
-                                                                    suspendisse ut odio vulputate mattis justo hac facilisis
-                                                                    varius.</span>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-
-                                                </div>
-                                            </div>
-                                            <div class="py-3">
-                                                <div class="col-12">
-                                                    <div class="row align-items-center">
-                                                        <div class="col-sm-3">
-                                                            <div class="d-flex align-items-center">
-                                                                <div class="w-10">
-                                                                    <span class="blue-marker me-3"></span>
-                                                                </div>
-                                                                <span class="fs-15 font-theme fw-600">
-                                                                    Kathryn Murphy
-                                                                </span>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-sm-9">
-                                                            <div class="d-flex align-items-center">
-                                                                <span class="fs-14 font-theme">Amet tincidunt et id aliquam
-                                                                    diam</span>
-                                                                <span class="fs-13 font-theme opacity-50 ms-4">Amet posuere at
-                                                                    urna felis nec quis consectetur amet. Adipiscing.</span>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-
-                                                </div>
-                                            </div>
+                                                @endforeach
+                                            @else
+                                                <div class="text-center pt-5">
+                                                    <p class="text-center fs-15 mb-3 font-theme">Error while loading from slack, please try again !</p>
+                                                </div>  
+                                            @endif
                                         </div>
                                     @else
                                     <div class="text-center pt-5">

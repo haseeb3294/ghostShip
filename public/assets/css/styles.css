@@ -662,3 +662,8 @@ select.did-floating-select::-ms-expand {
     color: #e30000;
     font-size: 11px;
 }
+
+.channels .active{
+    border-left: 3px solid var(--vz-font-color-blue);
+    background-color:var(--bg-gray-light);
+}

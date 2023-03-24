@@ -667,3 +667,13 @@ select.did-floating-select::-ms-expand {
     border-left: 3px solid var(--vz-font-color-blue);
     background-color:var(--bg-gray-light);
 }
+
+.message{
+    display: flex;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    flex-direction: column;
+    justify-content: left;
+    margin-left: 40px;
+    border-bottom: 1px solid var(--vz-border-color) !important;
+}

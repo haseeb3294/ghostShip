@@ -148,6 +148,16 @@
     
                                                     </div>
                                                 </div>
+                                                <div class="messages border-bottom bg-light">
+                                                    <div class="message">
+                                                        <p class="fs-12 mb-1 font-theme fw-bold">Qasim Mansoor</p>
+                                                        <p class="fs-13 mb-0 font-theme">This is a test message</p>
+                                                    </div>
+                                                    <div class="message">
+                                                        <p class="fs-12 mb-1 font-theme fw-bold">Qasim Mansoor</p>
+                                                        <p class="fs-13 mb-0 font-theme">This is a test message of reply text</p>
+                                                    </div>
+                                                </div>
                                                 @endforeach
                                             @else
                                                 <div class="text-center pt-5">

@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\User;
+use Illuminate\Auth\Events\Registered;
 
 class AuthController extends Controller
 {
@@ -21,9 +22,10 @@ class AuthController extends Controller
             'password' => \Hash::make($request->password)
         ]);
         if ($register) {
+            event(new Registered($register));
             return json_encode([
                 'success' => true,
-                'message' => 'Registered Successfully'
+                'message' => 'Registered Successfully , please verify your email to login'
             ]);
         } else {
             return json_encode([

@@ -47,7 +47,7 @@ class IndexController extends Controller
             }
             return view('pages.index',compact('slack_access','slack'));
         } catch (\Throwable $th) {
-            return abort('404');
+            {{ dd($th->getMessage()) }}
         }
     }
 }

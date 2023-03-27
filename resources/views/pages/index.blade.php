@@ -120,7 +120,7 @@
                                         <div class="row channels">
                                             @if (!empty($slack['channels']))
                                                 @foreach ($slack['channels'] as $channel)
-                                                <div class="py-3 border-bottom {{ ($loop->index + 1 == 1) ? 'active' : '' }}">
+                                                <div class="py-3 single-channel border-bottom {{ ($loop->index + 1 == 1) ? 'active' : '' }}">
                                                     <div class="col-12">
                                                         <div class="row align-items-center">
                                                             <div class="col-12">
@@ -148,15 +148,15 @@
     
                                                     </div>
                                                 </div>
-                                                <div class="messages border-bottom bg-light">
-                                                    <div class="message">
-                                                        <p class="fs-12 mb-1 font-theme fw-bold">Qasim Mansoor</p>
-                                                        <p class="fs-13 mb-0 font-theme">This is a test message</p>
-                                                    </div>
-                                                    <div class="message">
-                                                        <p class="fs-12 mb-1 font-theme fw-bold">Qasim Mansoor</p>
-                                                        <p class="fs-13 mb-0 font-theme">This is a test message of reply text</p>
-                                                    </div>
+                                                <div class="messages border-bottom bg-light" style="display:none;">
+                                                    @foreach ($channel['messages']['messages'] as $item)
+                                                        @if(isset($item['client_msg_id']))
+                                                            <div class="message">
+                                                                <p class="fs-12 mb-1 font-theme fw-bold">{{ $item['user_info']->real_name }}</p>
+                                                                <p class="fs-13 mb-0 font-theme">{{ $item['text'] }}</p>
+                                                            </div>
+                                                        @endif
+                                                    @endforeach
                                                 </div>
                                                 @endforeach
                                             @else
@@ -219,5 +219,16 @@
         </div>
     </div>
 
+@endsection
+
+@section('custom-scripts')
+<script>
+    $('.single-channel').on('click',function(){
+        if ($(this).next('.messages').css('display') !== 'block') {
+            $('.messages').hide();
+        }
+        $(this).next('.messages').slideToggle();
+    });
+</script>
 @endsection
 

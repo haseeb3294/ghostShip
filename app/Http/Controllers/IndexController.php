@@ -32,7 +32,6 @@ class IndexController extends Controller
                                     'user_unique_id' => $slack_user_data_api_call['user']['id'],
                                     'team_id' => $slack_user_data_api_call['user']['team_id'],
                                     'username' => $slack_user_data_api_call['user']['name'],
-                                    'real_name' => $slack_user_data_api_call['user']['real_name'],
                                     'color' => $slack_user_data_api_call['user']['color']
                                 ]);
                                 $get_slack_messages_data['messages'][$key]['user_info'] = $slack_user;

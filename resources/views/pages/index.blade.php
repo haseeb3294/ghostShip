@@ -152,7 +152,7 @@
                                                     @foreach ($channel['messages']['messages'] as $item)
                                                         @if(isset($item['client_msg_id']))
                                                             <div class="message">
-                                                                <p class="fs-12 mb-1 font-theme fw-bold">{{ $item['user_info']->real_name }}</p>
+                                                                <p class="fs-12 mb-1 font-theme fw-bold">{{ $item['user_info']->username }}</p>
                                                                 <p class="fs-13 mb-0 font-theme">{{ $item['text'] }}</p>
                                                             </div>
                                                         @endif

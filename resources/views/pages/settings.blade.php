@@ -138,13 +138,81 @@
                                     <p class="mb-0 fs-14 text-theme-light-grey">Tellus vulputate laoreet a pellentesque nisi fames consectetur at.  </p>
                                 </div>
                                 <div class="setting-item">
-                                    <div class="d-flex align-items-center justify-content-between gap-2 mb-1">
-                                        <p class="mb-0 fw-600 fs-15">Accounts connected (authorized apps)</p>
-                                        <div class="form-check form-switch me-3">
-                                            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" />
+                                    <a href="javascript:void(0)" class="theme-tab-link">
+                                        <div class="d-flex align-items-center justify-content-between gap-2 mb-1">
+                                            <p class="mb-0 fw-600 fs-15 font-theme">Accounts connected (authorized apps)</p>
+                                            <i class="mdi mdi-chevron-down icon fs-22 me-2 font-theme"></i>
                                         </div>
+                                    </a>
+                                    <div class="theme-tab-content" style="display: none;">
+                                        <table class="w-100 table">
+                                            <tbody>
+                                                <tr>
+                                                    <th>
+                                                        <div class="d-flex align-items-center gap-2">
+                                                            <img src="{{ asset('assets/images/icons/slack.png') }}" height="16" alt="icon">
+                                                            <span class="d-block font-theme fw-bold fs-14">Slack</span>
+                                                        </div>
+                                                    </th>
+                                                    <td class="text-end">
+                                                        @if(!empty(auth()->user()->slack_access))
+                                                            <a href="javascript:void(0)" class="btn btn-success btn-sm">
+                                                                <i class="mdi mdi-check me-1"></i>
+                                                                <span>Connected</span>
+                                                            </a>
+                                                        @else
+                                                            <a href="https://slack.com/oauth/v2/authorize?scope=&amp;user_scope=channels%3Ahistory%2Cchannels%3Aread%2Cusers%3Aread%2Cusers.profile%3Aread&amp;redirect_uri=https%3A%2F%2Fghost-ship.beckapps.co%2Fslack-access-process&amp;client_id=4946016074774.4952826281266" class="btn btn-primary btn-sm">
+                                                                <i class="mdi mdi-transit-connection-horizontal me-1"></i>
+                                                                <span>Connect</span>    
+                                                            </a>
+                                                        @endif
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th>
+                                                        <div class="d-flex align-items-center gap-2">
+                                                            <img src="{{ asset('assets/images/icons/twitter.png') }}" height="16" alt="icon">
+                                                            <span class="d-block font-theme fw-bold fs-14">Twitter</span>
+                                                        </div>
+                                                    </th>
+                                                    <td class="text-end">
+                                                        @if(!empty(auth()->user()->twitter_access))
+                                                            <a href="javascript:void(0)" class="btn btn-success btn-sm">
+                                                                <i class="mdi mdi-check me-1"></i>
+                                                                <span>Connected</span>
+                                                            </a>
+                                                        @else
+                                                            <a href="javascript:void(0)" class="btn btn-primary btn-sm">
+                                                                <i class="mdi mdi-transit-connection-horizontal me-1"></i>
+                                                                <span>Connect</span>    
+                                                            </a>
+                                                        @endif
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th>
+                                                        <div class="d-flex align-items-center gap-2">
+                                                            <img src="{{ asset('assets/images/icons/discord.png') }}" height="16" alt="icon">
+                                                            <span class="d-block font-theme fw-bold fs-14">Discord</span>
+                                                        </div>
+                                                    </th>
+                                                    <td class="text-end">
+                                                        @if(!empty(auth()->user()->discord_access))
+                                                            <a href="javascript:void(0)" class="btn btn-success btn-sm">
+                                                                <i class="mdi mdi-check me-1"></i>
+                                                                <span>Connected</span>
+                                                            </a>
+                                                        @else
+                                                        <a href="javascript:void(0)" class="btn btn-primary btn-sm">
+                                                            <i class="mdi mdi-transit-connection-horizontal me-1"></i>
+                                                            <span>Connect</span>
+                                                        </a>
+                                                        @endif
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
                                     </div>
-                                    <p class="mb-0 fs-14 text-theme-light-grey">Massa arcu donec donec scelerisque phasellus tellus sed risus.</p>
                                 </div>
                                 <div class="setting-item">
                                     <div class="d-flex align-items-center justify-content-between gap-2 mb-1">
@@ -306,6 +374,10 @@
         if($(window).width() <= 768){
             $('.setting-navigation').fadeOut();
         } 
+    });
+    $('.theme-tab-link').on('click',function(){
+        $(this).next('.theme-tab-content').slideToggle();
+        $(this).find('.icon').toggleClass('rotate');
     });
 </script>
 @endsection

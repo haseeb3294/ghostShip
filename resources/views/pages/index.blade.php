@@ -148,7 +148,7 @@
     
                                                     </div>
                                                 </div>
-                                                <div class="messages border-bottom bg-light" style="display:none;">
+                                                <div class="messages border-bottom bg-theme-light" style="display:none;">
                                                     @foreach ($channel['messages']['messages'] as $item)
                                                         @if(isset($item['client_msg_id']))
                                                             <div class="message">

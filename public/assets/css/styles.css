@@ -677,3 +677,13 @@ select.did-floating-select::-ms-expand {
     margin-left: 40px;
     border-bottom: 1px solid var(--vz-border-color) !important;
 }
+
+.bg-theme-light{
+    background-color: var(--bg-gray-light);
+}
+.theme-tab-link .icon{
+    transition: all 0.5s;
+}
+.icon.rotate{
+    transform: rotate(180deg);
+}

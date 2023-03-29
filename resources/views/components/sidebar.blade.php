@@ -66,7 +66,7 @@
                         <div class="d-flex conversation-section align-items-center gap-2 sidebar-commands-title" style="cursor:pointer;">
                             <span>
                                 <img src="{{ asset('assets/images/figma/ghostship.png') }}" height="45" width="45" alt="img" class="object-fit-contain logo-app-dark">
-                                <img src="{{ asset('assets/images/figma/ghostship-icon-white.png') }}" class="me-2 object-fit-contain logo-app-light"
+                                <img src="{{ asset('assets/images/figma/ghostship-icon-white.png') }}" class="object-fit-contain logo-app-light"
                                     height="45" width="45" alt="img">
                             </span>
                             <span class="text-uppercase text-black fw-bold">Commands</span>

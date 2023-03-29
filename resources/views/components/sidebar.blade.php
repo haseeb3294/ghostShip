@@ -63,12 +63,14 @@
                 </div>
                 <div class="container-fluid">
                     <div class="conversation">
-                        <div class="d-flex conversation-section align-items-center gap-1 sidebar-commands-title" style="cursor:pointer;">
+                        <div class="d-flex conversation-section align-items-center gap-2 sidebar-commands-title" style="cursor:pointer;">
                             <span>
-                                <img src="{{ asset('assets/images/figma/ghostship.png') }}" height="45" width="45" alt="">
+                                <img src="{{ asset('assets/images/figma/ghostship.png') }}" height="45" width="45" alt="img" class="object-fit-contain logo-app-dark">
+                                <img src="{{ asset('assets/images/figma/ghostship-icon-white.png') }}" class="me-2 object-fit-contain logo-app-light"
+                                    height="45" width="45" alt="img">
                             </span>
                             <span class="text-uppercase text-black fw-bold">Commands</span>
-                            <span class="mb-2 command-title-icon"><i class="bx bx-help-circle icon-theme fs-14"></i></span>
+                            <span class="mb-2 command-title-icon" title="Ghostship commands help automate tasks and summarize notifications"><i class="bx bx-help-circle icon-theme fs-14"></i></span>
                         </div>
                         <div class="d-flex conversation-section align-items-center gap-3">
                             <i class="mdi mdi-react icon-theme fs-18"></i>
@@ -126,10 +128,12 @@
                 </div>
                 <div class="container-fluid">
                     <div>
-                        <div class="d-flex conversation-section align-items-end p-4">
+                        <div class="d-flex conversation-section align-items-end p-4 gap-2">
                             <span>
-                                <img src="{{ asset('assets/images/figma/ghostship.png') }}" class="me-2"
-                                    height="68" width="60" alt="">
+                                <img src="{{ asset('assets/images/figma/ghostship.png') }}" class="me-2 object-fit-contain logo-app-dark"
+                                    height="68" width="60" alt="img">
+                                <img src="{{ asset('assets/images/figma/ghostship-icon-white.png') }}" class="me-2 object-fit-contain logo-app-light"
+                                    height="68" width="60" alt="img">
                             </span>
                             <div class="notifications-alert">
                                 <p class="fs-11">

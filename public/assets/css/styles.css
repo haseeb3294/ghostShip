@@ -687,3 +687,14 @@ select.did-floating-select::-ms-expand {
 .icon.rotate{
     transform: rotate(180deg);
 }
+
+[data-layout-mode=light] .logo-app-light {
+    display: none !important;
+}
+
+[data-layout-mode=dark] .logo-app-dark {
+    display: none !important;
+}
+.object-fit-contain{
+    object-fit: contain !important;
+}

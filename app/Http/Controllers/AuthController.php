@@ -33,6 +33,7 @@ class AuthController extends Controller
                 'otp' => $otp,
                 'otp_expires_at' => $otp_expires_at
             ]);
+            dd($register->email);
             if($save_otp){
                 \Mail::to($register->email)->send(new Verify_email($otp));
             }

@@ -28,6 +28,10 @@ Route::middleware('guest')->group(function(){
     Route::get('/user-signup',function(){
         return view('pages.user_signup');
     })->name('user_signup');
+
+    Route::get('/verify-email/{id}',[AuthController::class,'verify_email'])->name('verify_email');
+
+    Route::get('/resend-otp/{id}',[AuthController::class,'resend_otp'])->name('resend_otp');
 });
 
 Route::middleware('auth')->group(function(){

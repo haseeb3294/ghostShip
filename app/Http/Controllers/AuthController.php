@@ -36,9 +36,11 @@ class AuthController extends Controller
             if($save_otp){
                 \Mail::to($register->email)->send(new Verify_email($otp));
             }
+            $encrypt_user_id = encrypt('ghost-ship',10).'-'.encrypt($register->id,10).'-'.encrypt('application',10);
             return json_encode([
                 'success' => true,
-                'message' => 'Registered Successfully , please verify your email to login'
+                'message' => 'Registered Successfully , please verify your email to login',
+                'session_id' => $encrypt_user_id
             ]);
         } else {
             return json_encode([
@@ -80,5 +82,25 @@ class AuthController extends Controller
     public function user_logout(){
         auth()->logout();
         return redirect()->route('user_login');
+    }
+
+    public function resend_otp($user_id){
+        $explode_id = explode("-",$user_id);
+        $userID = decrypty($explode_id[1]);
+        $user = User::where('id',$userID)->first();
+        $otp = \Str::random(6);
+        $otp_expires_at = now()->addMinutes(10);
+        $save_otp = User::where('id',$user->id)->update([
+            'otp' => $otp,
+            'otp_expires_at' => $otp_expires_at
+        ]);
+        if($save_otp){
+            \Mail::to($user->email)->send(new Verify_email($otp));
+        }
+    }
+
+    public function verify_email($user_id){
+        $userID = $user_id;
+        return view('pages.verify_email',compact('userID'));
     }
 }

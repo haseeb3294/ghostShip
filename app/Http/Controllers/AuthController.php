@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\User;
 use Illuminate\Auth\Events\Registered;
+use App\Mail\Verify_email;
 
 class AuthController extends Controller
 {

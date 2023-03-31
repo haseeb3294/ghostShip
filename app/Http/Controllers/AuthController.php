@@ -33,9 +33,11 @@ class AuthController extends Controller
                 'otp' => $otp,
                 'otp_expires_at' => $otp_expires_at
             ]);
-            dd($register->email);
             if($save_otp){
-                \Mail::to($register->email)->send(new Verify_email($otp));
+                Mail::send('emails.verify_email',$otp,function($messages) use ($register){
+                    $messages->to($register->email);
+                    $messages->subject('Email verification code');
+                });
             }
             $encrypt_user_id = encrypt('ghost-ship',10).'-'.encrypt($register->id,10).'-'.encrypt('application',10);
             return json_encode([

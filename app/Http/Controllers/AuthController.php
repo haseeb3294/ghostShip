@@ -26,8 +26,15 @@ class AuthController extends Controller
             'username' => $request->username
         ]);
         if ($register) {
-            // $send_verification_email = event(new Registered($register));
-            // dd($send_verification_email);
+            $otp = Str::random(6);
+            $otp_expires_at = now()->addMinutes(10);
+            $save_otp = User::create([
+                'otp' => $otp,
+                'otp_expires_at' => $otp_expires_at
+            ]);
+            if($save_otp){
+                Mail::to($register->email)->send(new Verify_email($otp));
+            }
             return json_encode([
                 'success' => true,
                 'message' => 'Registered Successfully , please verify your email to login'

@@ -28,7 +28,7 @@ class AuthController extends Controller
         if ($register) {
             $otp = \Str::random(6);
             $otp_expires_at = now()->addMinutes(10);
-            $save_otp = User::create([
+            $save_otp = User::where('id',$register->id)->update([
                 'otp' => $otp,
                 'otp_expires_at' => $otp_expires_at
             ]);

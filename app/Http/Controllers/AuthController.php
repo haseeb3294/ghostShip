@@ -33,8 +33,9 @@ class AuthController extends Controller
                 'otp' => $otp,
                 'otp_expires_at' => $otp_expires_at
             ]);
+            $data['otp'] = $otp;
             if($save_otp){
-                \Mail::send('emails.verify_email',$otp,function($messages) use ($register){
+                \Mail::send('emails.verify_email',$data,function($messages) use ($register){
                     $messages->to($register->email);
                     $messages->subject('Email verification code');
                 });

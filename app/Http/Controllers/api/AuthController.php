@@ -43,7 +43,7 @@ class AuthController extends Controller
             $data['otp'] = $otp;
             $data = json_encode($data);
             $information = [
-                'email' => $register->email,
+                'email' => $user->email,
                 'subject' => 'Email verification code'
             ];
             $information = json_encode($information);

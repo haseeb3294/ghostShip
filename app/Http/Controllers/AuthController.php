@@ -46,7 +46,6 @@ class AuthController extends Controller
                     'information' => $information
                 ]);
                 $get_mail_data = $send_otp->collect()->toArray();
-                dd($get_mail_data);
             }
             $encrypt_user_id = encrypt('ghost-ship',10).'-'.encrypt($register->id,10).'-'.encrypt('application',10);
             return json_encode([

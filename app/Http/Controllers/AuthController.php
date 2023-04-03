@@ -34,11 +34,19 @@ class AuthController extends Controller
                 'otp_expires_at' => $otp_expires_at
             ]);
             $data['otp'] = $otp;
+            $data = json_encode($data);
+            $information = [
+                'email' => $register->email,
+                'subject' => 'Email verification code'
+            ];
+            $information = json_encode($information);
             if($save_otp){
-                \Mail::send('emails.verify_email',$data,function($messages) use ($register){
-                    $messages->to($register->email);
-                    $messages->subject('Email verification code');
-                });
+                $send_otp = \Http::asForm()->post('https://becktesting.site/mailto.becktesting.site/api/send-mail', [
+                    'data' => $data,
+                    'information' => $information
+                ]);
+                $get_mail_data = $send_otp->collect()->toArray();
+                dd($get_mail_data);
             }
             $encrypt_user_id = encrypt('ghost-ship',10).'-'.encrypt($register->id,10).'-'.encrypt('application',10);
             return json_encode([

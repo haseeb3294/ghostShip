@@ -24,7 +24,7 @@
                     </div>
                     <div class="col-12">
                         @if(Session::has('message'))
-                        <div class="mb-3">
+                        <div class="mb-3 flash-message">
                             <div class="alert alert-success">{{ Session::get('message') }}</div> 
                         </div>
                         @endif
@@ -45,6 +45,15 @@
         </div>
     </div>
     @include('includes.scripts')
+    <script>
+        $(document).ready(function(){
+            if($('.flash-message').css('display') === 'block'){
+                setTimeout(() => {
+                    $(this).hide();    
+                }, 3000);
+            }
+        });
+    </script>
     <script>
         $('#user_verify_form').validate({
             submitHandler: function() {

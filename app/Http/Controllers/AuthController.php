@@ -72,7 +72,7 @@ class AuthController extends Controller
         try {
             $get_user = User::where('email',$request->email)->where('password',$request->password)->first();
             if(empty($get_user->email_verified_at)){
-                $encrypt_user_id = encrypt('ghost-ship',10).'-'.encrypt($register->id,10).'-'.encrypt('application',10);
+                $encrypt_user_id = encrypt('ghost-ship',10).'-'.encrypt($get_user->id,10).'-'.encrypt('application',10);
                 return redirect()->route('verify_email',$encrypt_user_id);
             }
             $login_attempt = \Auth::attempt(['email' => $request->email, 'password' => $request->password]);

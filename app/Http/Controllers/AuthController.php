@@ -90,7 +90,7 @@ class AuthController extends Controller
         } catch (\Throwable $th) {
             return json_encode([
                 'success' => false,
-                'message' => 'Error : Please try again later'
+                'message' => $th->getMessage()
             ]);
         }
     }

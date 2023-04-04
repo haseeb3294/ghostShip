@@ -49,7 +49,7 @@
         $(document).ready(function(){
             if($('.flash-message').css('display') === 'block'){
                 setTimeout(() => {
-                    $(this).hide();    
+                    $('.flash-message').hide();   
                 }, 3000);
             }
         });

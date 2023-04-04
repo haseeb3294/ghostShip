@@ -30,9 +30,8 @@
                         @endif
                         <div class="mb-4">
                             <div class="did-floating-label-content">
-                                <input type="hidden" value="{{ $userID }}">
-                                <input class="did-floating-input" type="text"
-                                       placeholder="Enter code send to your email" name="otp" required>
+                                <input type="hidden" name="user_id" value="{{ $userID }}">
+                                <input class="did-floating-input" type="text" name="otp" required>
                                 <label class="did-floating-label">Code</label>
                             </div>
                         </div>
@@ -49,7 +48,7 @@
     <script>
         $('#user_verify_form').validate({
             submitHandler: function() {
-                ajaxCall($('#user_verify_form'), "{{ route('user_signin_action') }}", $('#user_verify_btn'),
+                ajaxCall($('#user_verify_form'), "{{ route('user_verify_email') }}", $('#user_verify_btn'),
                     "{{ route('index') }}", onRequestSuccess);
             }
         });

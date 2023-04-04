@@ -70,6 +70,11 @@ class AuthController extends Controller
             return response()->json(["success" => false, 'message' => $validate->errors()->first()]);
         }
         try {
+            $get_user = User::where('email',$request->email)->where('password',$request->password)->first();
+            if(empty($get_user->email_verified_at)){
+                $encrypt_user_id = encrypt('ghost-ship',10).'-'.encrypt($register->id,10).'-'.encrypt('application',10);
+                return redirect()->route('verify_email',$encrypt_user_id);
+            }
             $login_attempt = \Auth::attempt(['email' => $request->email, 'password' => $request->password]);
             if ($login_attempt) {
                 return json_encode([
@@ -126,4 +131,40 @@ class AuthController extends Controller
         $userID = $user_id;
         return view('pages.verify_email',compact('userID'));
     }
+
+    public function user_verify_email(Request $request){
+        $validate = \Validator::make($request->all(), [
+            'otp' => 'required',
+            'user_id' => 'required'
+        ]);
+        if ($validate->fails()) {
+            return response()->json(["success" => false, 'message' => $validate->errors()->first()]);
+        }
+        try {
+            $explode_id = explode("-",$request->user_id);
+            $userID = decrypt($explode_id[1]);
+            $user = User::where('id',$userID)->first();
+            if ($user->otp === $request->otp && $user->otp_expires_at > now()) {
+                $currentTimeStamp = now();
+                $user_email_verify = User::where('id',$user->id)->update([
+                    'email_verified_at' => $currentTimeStamp
+                ]);
+                return json_encode([
+                    'success' => true,
+                    'message' => 'Email verified Successfully'
+                ]);
+            } else {
+                return json_encode([
+                    'success' => false,
+                    'message' => 'The OTP entered is invalid'
+                ]);
+            }
+        } catch (\Throwable $th) {
+            return json_encode([
+                'success' => false,
+                'message' => 'Error : Please try again later'
+            ]);
+        }
+    }
+
 }

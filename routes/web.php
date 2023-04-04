@@ -32,6 +32,8 @@ Route::middleware('guest')->group(function(){
     Route::get('/verify-email/{id}',[AuthController::class,'verify_email'])->name('verify_email');
 
     Route::get('/resend-otp/{id}',[AuthController::class,'resend_otp'])->name('resend_otp');
+
+    Route::post('/user-verify-email',[AuthController::class,'user_verify_email'])->name('user_verify_email');
 });
 
 Route::middleware('auth')->group(function(){

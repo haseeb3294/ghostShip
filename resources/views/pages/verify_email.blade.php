@@ -24,7 +24,7 @@
                     </div>
                     <div class="col-12">
                         @if(Session::has('message'))
-                        <div class="mb-3 flash-message">
+                        <div class="mb-3 flash-message" style="display:block">
                             <div class="alert alert-success">{{ Session::get('message') }}</div> 
                         </div>
                         @endif

@@ -16,7 +16,7 @@
                 <h1 class="mb-1 fw-bold fs-20">Ghostship</h1>
                 <p class="mb-0 fs-12">Login to continue to Ghostship</p>
             </div>
-            <form id="user_signin_form">
+            <form id="user_signin_form" method="post">
                 @csrf
                 <div class="row mt-4">
                     <div class="col-12">
@@ -52,8 +52,91 @@
     <script>
         $('#user_signin_form').validate({
             submitHandler: function() {
-                ajaxCall($('#user_signin_form'), "{{ route('user_signin_action') }}", $('#user_signin_btn'),
-                    "{{ route('index') }}", onRequestSuccess);
+                var formData = new FormData($('#user_signin_form')[0]);
+                var btnText = $('#user_signin_btn').html();
+                var button = $('#user_signin_btn');
+                var prompt = $('body').find('.prompt');
+                $.ajax({
+                    type: "POST",
+                    url: "{{ route('user_signin_action') }}",
+                    dataType: 'json',
+                    contentType: false,
+                    processData: false,
+                    cache: false,
+                    data: formData,
+                    mimeType: "multipart/form-data",
+                    beforeSend: function() {
+                        $('#user_signin_btn').prop('disabled', true);
+                        $('#user_signin_btn').html('Processing...');
+                    },
+                    success: function(response) {
+                        if (response.success == true) {
+                            $('html, body').animate({
+                                scrollTop: $("body").offset().top
+                            }, 500);
+                            prompt.html('<div class="alert alert-success mb-4">' + response.message + '</div>');
+                            setTimeout(() => {
+                                window.location.href = `{{ route('index') }}`;
+                            }, 2000);
+                        } 
+                        else if (response.success === 'verification'){
+                            $('html, body').animate({
+                                scrollTop: $("body").offset().top
+                            }, 500);
+                            prompt.html('<div class="alert alert-warning mb-4">' + response.message + '</div>');
+                            setTimeout(() => {
+                                window.location.href = `{{ route('verify_email','id') }}`.replace('id',response.session_id);
+                            }, 2000);
+                        }    
+                        else {
+                            $('html, body').animate({
+                                scrollTop: $("body").offset().top
+                            }, 500);
+                            prompt.html('<div class="alert alert-danger mb-4">' + response.message + '</div>');
+                            button.prop('disabled', false);
+                            button.html(buttonText);
+                            setTimeout(function(){
+                                $('.loading-bar').css('transition', 'none');
+                                $('.loading-bar').css('width', 0);
+                            },500);
+                        }
+                    },
+                    error: function(e) {
+                        $('html, body').animate({
+                            scrollTop: $("body").offset().top
+                        }, 500);
+                        prompt.html(
+                            '<div class="alert alert-danger mb-4">Error : Please try again later</div>'
+                            );
+                        button.prop('disabled', false);
+                        button.html(btnText);
+                        setTimeout(function() {
+                            $('.loading-bar').css('transition', 'none');
+                            $('.loading-bar').css('width', 0);
+                        }, 500);
+                    },
+                    xhr: function() {
+                        var xhr = new window.XMLHttpRequest();
+                        xhr.upload.addEventListener("progress", function(evt) {
+                            if (evt.lengthComputable) {
+                                var percentComplete = 100 * (evt.loaded / evt.total);
+                                //Do something with upload progress here
+                                postUploadProgress(percentComplete.toFixed(2))
+                            }
+                        }, false);
+
+                        xhr.addEventListener("progress", function(evt) {
+                            if (evt.lengthComputable) {
+                                var percentComplete = 100 * (evt.loaded / evt.total);
+                                //Do something with download progress
+                                postUploadProgress(percentComplete.toFixed(2))
+
+                            }
+                        }, false);
+
+                        return xhr;
+                    }
+                });
             }
         });
     </script>

@@ -70,10 +70,17 @@ class AuthController extends Controller
             return response()->json(["success" => false, 'message' => $validate->errors()->first()]);
         }
         try {
-            $get_user = User::where('email',$request->email)->where('password',$request->password)->first();
-            if(empty($get_user->email_verified_at)){
-                $encrypt_user_id = encrypt('ghost-ship',10).'-'.encrypt($get_user->id,10).'-'.encrypt('application',10);
-                return redirect()->route('verify_email',$encrypt_user_id);
+            $get_user = User::where('email',$request->email)->first();
+            $password_check = \Hash::check($request->password, $get_user->password);
+            if($password_check == true){
+                if(empty($get_user->email_verified_at)){
+                    $encrypt_user_id = encrypt('ghost-ship',10).'-'.encrypt($get_user->id,10).'-'.encrypt('application',10);
+                    return json_encode([
+                        'success' => 'verification',
+                        'message' => 'Please verify your email to login',
+                        'session_id' => $encrypt_user_id
+                    ]);
+                }
             }
             $login_attempt = \Auth::attempt(['email' => $request->email, 'password' => $request->password]);
             if ($login_attempt) {

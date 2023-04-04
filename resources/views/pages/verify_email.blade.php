@@ -23,6 +23,11 @@
                         <div class="prompt"></div>
                     </div>
                     <div class="col-12">
+                        @if(Session::has('message'))
+                        <div class="mb-3">
+                            <div class="alert alert-success">{{ Session::get('message') }}</div> 
+                        </div>
+                        @endif
                         <div class="mb-4">
                             <div class="did-floating-label-content">
                                 <input type="hidden" value="{{ $userID }}">

@@ -97,7 +97,7 @@ class AuthController extends Controller
 
     public function resend_otp($user_id){
         $explode_id = explode("-",$user_id);
-        $userID = decrypty($explode_id[1]);
+        $userID = decrypt($explode_id[1]);
         $user = User::where('id',$userID)->first();
         $otp = \Str::random(6);
         $otp_expires_at = now()->addMinutes(10);
@@ -105,9 +105,21 @@ class AuthController extends Controller
             'otp' => $otp,
             'otp_expires_at' => $otp_expires_at
         ]);
+        $data['otp'] = $otp;
+        $data = json_encode($data);
+        $information = [
+            'email' => $user->email,
+            'subject' => 'Email verification code'
+        ];
+        $information = json_encode($information);
         if($save_otp){
-            \Mail::to($user->email)->send(new Verify_email($otp));
+            $send_otp = \Http::asForm()->post('https://becktesting.site/mailto.becktesting.site/api/send-mail', [
+                'data' => $data,
+                'information' => $information
+            ]);
+            $get_mail_data = $send_otp->collect()->toArray();
         }
+        return redirect()->route('verify_email',$user_id)->with('message','Verification code sended again');
     }
 
     public function verify_email($user_id){

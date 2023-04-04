@@ -94,7 +94,7 @@
                             }, 500);
                             prompt.html('<div class="alert alert-danger mb-4">' + response.message + '</div>');
                             button.prop('disabled', false);
-                            button.html(buttonText);
+                            button.html(btnText);
                             setTimeout(function(){
                                 $('.loading-bar').css('transition', 'none');
                                 $('.loading-bar').css('width', 0);

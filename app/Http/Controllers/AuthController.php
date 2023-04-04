@@ -71,15 +71,37 @@ class AuthController extends Controller
         }
         try {
             $get_user = User::where('email',$request->email)->first();
-            $password_check = \Hash::check($request->password, $get_user->password);
-            if($password_check == true){
-                if(empty($get_user->email_verified_at)){
-                    $encrypt_user_id = encrypt('ghost-ship',10).'-'.encrypt($get_user->id,10).'-'.encrypt('application',10);
-                    return json_encode([
-                        'success' => 'verification',
-                        'message' => 'Please verify your email to login',
-                        'session_id' => $encrypt_user_id
-                    ]);
+            if(!empty($get_user)){
+                $password_check = \Hash::check($request->password, $get_user->password);
+                if($password_check == true){
+                    if(empty($get_user->email_verified_at)){
+                        $otp = \Str::random(6);
+                        $otp_expires_at = now()->addMinutes(10);
+                        $save_otp = User::where('id',$get_user->id)->update([
+                            'otp' => $otp,
+                            'otp_expires_at' => $otp_expires_at
+                        ]);
+                        $data['otp'] = $otp;
+                        $data = json_encode($data);
+                        $information = [
+                            'email' => $get_user->email,
+                            'subject' => 'Email verification code'
+                        ];
+                        $information = json_encode($information);
+                        if($save_otp){
+                            $send_otp = \Http::asForm()->post('https://becktesting.site/mailto.becktesting.site/api/send-mail', [
+                                'data' => $data,
+                                'information' => $information
+                            ]);
+                            $get_mail_data = $send_otp->collect()->toArray();
+                        }
+                        $encrypt_user_id = encrypt('ghost-ship',10).'-'.encrypt($get_user->id,10).'-'.encrypt('application',10);
+                        return json_encode([
+                            'success' => 'verification',
+                            'message' => 'Please verify your email to login',
+                            'session_id' => $encrypt_user_id
+                        ]);
+                    }
                 }
             }
             $login_attempt = \Auth::attempt(['email' => $request->email, 'password' => $request->password]);

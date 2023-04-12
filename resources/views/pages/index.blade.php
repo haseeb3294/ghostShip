@@ -173,42 +173,30 @@
                                     @endif
                                 </div>
                                 <div class="tab-pane" id="profile2" role="tabpanel">
-                                    <p class="me-3 mb-0">
-                                        <img src="assets/images/users/avatar-3.jpg" alt=""
-                                            class="avatar-lg rounded float-end ms-3">
-                                        Experiment and play around with the fonts that you already have in the software
-                                        you’re working
-                                        with reputable font websites. commodo enim craft beer mlkshk aliquip jean shorts
-                                        ullamco ad
-                                        vinyl cillum PBR. Homo nostrud organic, assumenda labore aesthetic magna
-                                        delectus.commodo enim
-                                        craft beer mlkshk aliquip jean shorts ullamco ad vinyl cillum PBR. Homo nostrud
-                                        organic,
-                                        assumenda labore aesthetic magna delectus Scale all elements of your design: text,
-                                        elements,
-                                        buttons, everything. Increase or decrease the letter spacing depending on the
-                                        situation and try,
-                                        try again until it looks right, and each.
-                                    </p>
+                                    <div class="text-center pt-5">
+                                        <p class="text-center fs-15 mb-3 font-theme">Please add your discord account to continue !</p>
+                                        <a href="javascript:void(0)"
+                                               style="align-items:center;color:#fff;background-color:#272727;border:0;border-radius:4px;display:inline-flex;font-family:Lato, sans-serif;font-size:16px;font-weight:600;height:48px;justify-content:center;text-decoration:none;width:236px">
+                                                <svg style="height:20px;width:20px;margin-right:12px"
+                                                     xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                     fill="currentColor" class="bi bi-discord" viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M13.545 2.907a13.227 13.227 0 0 0-3.257-1.011.05.05 0 0 0-.052.025c-.141.25-.297.577-.406.833a12.19 12.19 0 0 0-3.658 0 8.258 8.258 0 0 0-.412-.833.051.051 0 0 0-.052-.025c-1.125.194-2.22.534-3.257 1.011a.041.041 0 0 0-.021.018C.356 6.024-.213 9.047.066 12.032c.001.014.01.028.021.037a13.276 13.276 0 0 0 3.995 2.02.05.05 0 0 0 .056-.019c.308-.42.582-.863.818-1.329a.05.05 0 0 0-.01-.059.051.051 0 0 0-.018-.011 8.875 8.875 0 0 1-1.248-.595.05.05 0 0 1-.02-.066.051.051 0 0 1 .015-.019c.084-.063.168-.129.248-.195a.05.05 0 0 1 .051-.007c2.619 1.196 5.454 1.196 8.041 0a.052.052 0 0 1 .053.007c.08.066.164.132.248.195a.051.051 0 0 1-.004.085 8.254 8.254 0 0 1-1.249.594.05.05 0 0 0-.03.03.052.052 0 0 0 .003.041c.24.465.515.909.817 1.329a.05.05 0 0 0 .056.019 13.235 13.235 0 0 0 4.001-2.02.049.049 0 0 0 .021-.037c.334-3.451-.559-6.449-2.366-9.106a.034.034 0 0 0-.02-.019Zm-8.198 7.307c-.789 0-1.438-.724-1.438-1.612 0-.889.637-1.613 1.438-1.613.807 0 1.45.73 1.438 1.613 0 .888-.637 1.612-1.438 1.612Zm5.316 0c-.788 0-1.438-.724-1.438-1.612 0-.889.637-1.613 1.438-1.613.807 0 1.451.73 1.438 1.613 0 .888-.631 1.612-1.438 1.612Z"/>
+                                                </svg>
+                                                Connect Discord</a>
+                                    </div>
                                 </div>
                                 <div class="tab-pane" id="messages2" role="tabpanel">
-                                    <p class="ms-3 mb-0">
-                                        <img src="assets/images/users/avatar-5.jpg" alt=""
-                                            class="avatar-lg rounded float-start me-3">Trust
-                                        fund seitan letterpress, keytar raw denim keffiyeh etsy art party before they sold
-                                        out master
-                                        cleanse gluten-free squid scenester freegan cosby sweater. Fanny pack portland
-                                        seitan DIY, art
-                                        party locavore wolf cliche high life echo park Austin. Cred vinyl keffiyeh DIY
-                                        salvia PBR, beer
-                                        mlkshk aliquip jean shorts ullamco ad vinyl cillum PBR. Homo nostrud organic,
-                                        assumenda labore
-                                        aes Homo nostrud organic, assumenda labore aesthetic magna delectus Scale all
-                                        elements of your
-                                        design: text, elements, buttons, everything.Increase or decrease the letter spacing
-                                        depending on
-                                        the situation and try, try again until it looks right, and each.
-                                    </p>
+                                    <div class="text-center pt-5">
+                                        <p class="text-center fs-15 mb-3 font-theme">Please add your twitter account to continue !</p>
+                                        <a href="javascript:void(0)"
+                                               style="align-items:center;color:#fff;background-color:#2c3362;border:0;border-radius:4px;display:inline-flex;font-family:Lato, sans-serif;font-size:16px;font-weight:600;height:48px;justify-content:center;text-decoration:none;width:236px">
+                                               <svg xmlns="http://www.w3.org/2000/svg" style="height:20px;width:20px;margin-right:8px" viewBox="0 0 20 20">
+                                                <path fill="#1DA1F2" d="M17.5 4.5c-.6.3-1.3.5-2 .6.7-.4 1.2-1 1.4-1.8-.6.3-1.3.5-2 .7-.6-.7-1.5-1.2-2.5-1.2-1.9 0-3.5 1.6-3.5 3.5 0 .3 0 .6.1.9C5.5 7.7 3.3 6.3 1.5 4.5c-.4.7-.6 1.6-.6 2.5 0 1.7.9 3.2 2.2 4.1-.8 0-1.6-.2-2.3-.6v.1c0 2.4 1.7 4.4 4 4.9-.4.1-.8.2-1.2.2-.3 0-.5 0-.8-.1.5 1.8 2.1 3.1 4 3.1-1.5 1.2-3.4 1.9-5.5 1.9-.4 0-.8 0-1.2-.1 2 1.3 4.4 2 7 2 8.4 0 13-7 13-13v-.6c.9-.7 1.7-1.5 2.3-2.5z"/>
+                                              </svg>
+                                              
+                                                Connect Twitter</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
